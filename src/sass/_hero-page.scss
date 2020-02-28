@@ -1,0 +1,141 @@
+ /* first section */
+ section {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+
+  // first section
+  .natural {
+    .inner {
+      padding-top: 224px;
+      .copy {
+
+      }
+      .img-outer {
+
+      }
+    }
+    .square {
+      bottom: 0;
+    }
+    .circle {
+
+    }
+
+  }
+  
+  @media only screen and (max-width: 760px) {
+    .natural {
+      justify-content: space-between;
+    }
+  }
+  
+
+  
+  div.copy h2,
+  div.copy-two h2,
+  div.copy-three h2,
+  div.copy-four h2 {
+    font-size: 120px;
+    line-height: 1;
+  }
+  
+  div.circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #d9a724;
+  }
+  
+  div.square {
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    background-color: #5982a0;
+  }
+  
+  div.square-two {
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    background-color: #5982a0;
+  }
+  
+  /* second section */
+  
+  section.doing {
+  
+  }
+  
+  section.doing.content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content .copy-two {
+    position: absolute;
+    right: 75%;
+    top: 50%;
+    width: 550px;
+    transform: translateY(15%);
+  }
+  
+  div.copy-two h6 {
+    font-size: 26px;
+    max-width: 400px;
+    margin-top: 40px;
+  }
+  
+  
+  section.s2 div.circle {
+    background-color: #be3c52;
+  }
+  
+  section.s2 div.square {
+    background-color: #5f3736;
+  }
+  
+  
+  /* third section */
+  .lookbook {
+    background-image: url(../assets/hero/image_3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  div.copy-three {
+    position: relative;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  div.copy-three h2 a:hover,
+  div.copy-four h2 a:hover {
+    cursor: pointer;
+    color: transparent;
+    -webkit-text-stroke: 3px #fff;
+  }
+  
+
+  // Fourth section: view our spring collection
+  .content .copy-four {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    width: 550px;
+    transform: translate(-65%, -45%);
+  }
+  
+  section.s4 div.circle {
+    background-color: #6e5f67;
+  }
+  
+  .s4 .square-two {
+    background-color: #d54156 !important;
+    right: 50px;
+  }
+  

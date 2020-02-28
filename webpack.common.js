@@ -50,6 +50,14 @@ module.exports = {
       template: "src/index.html",
       filename: "./index.html"
     }),
+    new HtmlWebPackPlugin({
+      template: "src/lookbook.html",
+      filename: "./lookbook.html"
+    }),
+    new HtmlWebPackPlugin({
+      template: "src/spring-collection.html",
+      filename: "./spring-collection.html"
+    }),
     new MiniCssExtractPlugin({
       filename: "[name].css",
       chunkFilename: "[id].css"
