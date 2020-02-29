@@ -2,6 +2,63 @@ section {
   position: relative;
 }
 
+
+.hero {
+  overflow-x: hidden;
+  .heading {
+    text-align: center;
+    width: 100%;
+    margin-top: 2rem;
+    h1 {
+      font-size: 32vw;
+      font-weight: 700;
+      letter-spacing: -3px;
+      line-height: initial;
+    }
+  }
+  .img-outer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 10em;
+    img {
+      width: 50vw;
+      height: 40vw;
+    }
+  }
+  .img2 {
+    margin: 60vh 0 15vh;
+    padding-left: 5em; 
+    img {
+      width: 60%;
+      height: 100%;
+    }
+  }
+  .square {
+    bottom: 0;
+    left: 20%;
+  }
+
+  .circle {
+    z-index: 2;
+    right: 10%;
+  }
+
+  .copy {
+    margin: 0 auto;
+    padding: 0 64px;
+
+    p {
+      font-size: 8vh;
+      line-height: initial;
+      &:not(:first-of-type) {
+        padding-top: 32px;
+      }
+    }
+  }
+
+}
+
 // first section
 .natural {
   .inner {
@@ -14,14 +71,7 @@ section {
     .img-outer {}
   }
 
-  .square {
-    bottom: 0;
-  }
 
-  .circle {
-    z-index: 2;
-    right: 10%;
-  }
 }
 
 // second section
@@ -35,43 +85,55 @@ section {
   }
 }
 
+// marquee effect
+.marquee {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  height: 50%;
+  white-space: nowrap;
+  overflow: hidden;
+  z-index: 2;
+
+  span {
+    display: inline-block;
+    font-size: 230px;
+    line-height: 230px;
+    animation: marquee 45s linear infinite;
+    padding-right: 34px;
+    color: #00FF26;
+  }
+}
+
 .doing {
   position: relative;
+  overflow-x: hidden;
+  margin-top: 40vh;
 
   .marquee {
-    position: absolute;
     top: 30%;
     left: 0;
-    display: flex;
-    align-items: center;
-    height: 50%;
-    white-space: nowrap;
-    overflow: hidden;
-    z-index: 2;
 
     span {
-      display: inline-block;
-      font-size: 230px;
-      line-height: 230px;
-      animation: marquee 45s linear infinite;
+      color: #00FF26;
     }
   }
 
   .inner {
-
-
-
-
     .img-outer {}
 
     .circle {
-      background-color: #be3c52;
+      background-color: #00BF3A;
+      top: 20%;
+      left: 20%;
     }
 
     .square {
-      background-color: #5f3736;
+      background-color: #ff4040;
       top: 10%;
-      right: 30%;
+      right: 10%;
     }
   }
 }
@@ -102,6 +164,12 @@ section {
 
 // Fourth section: view our spring collection
 .spring {
+  overflow-x: hidden;
+  .marquee {
+    span {
+      color: #ff4040;
+    }
+  }
   .inner {
     .copy {}
 
@@ -109,11 +177,12 @@ section {
 
     .circle {
       right: 80px;
-      background-color: #6e5f67;
+      background-color: #00FF26;
     }
 
     .square {
-      background-color: #d54156;
+      background-color: #0068FF;
+      left: 20%;
     }
 
   }

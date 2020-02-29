@@ -9,11 +9,12 @@
 @import "shapes";
 
 body {
-    font-family: "HK Grotesk SemiBold", Arial, Helvetica, sans-serif;
+    // font-family: "HK Grotesk SemiBold", Arial, Helvetica, sans-serif;
+    font-family: Helvetica Neue;
     font-size: 24px;
     line-height: 28px;
-    color: #fff;
-    background-color: #ecc7ab;
+    color: #0a0a0a;
+    // background-color: #ecc7ab;
     // background-color: #ff6e00;
     margin: 0 auto;
     transition: background-color 1s;
@@ -21,7 +22,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
 }
 
 h1,
