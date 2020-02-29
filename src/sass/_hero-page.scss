@@ -22,8 +22,8 @@ section {
     align-items: center;
     margin-left: 10em;
     img {
-      width: 50vw;
-      height: 40vw;
+      width: 60vw;
+      height: 100%; 
     }
   }
   .img2 {
@@ -32,6 +32,7 @@ section {
     img {
       width: 60%;
       height: 100%;
+      filter: invert(100%);
     }
   }
   .square {
@@ -140,22 +141,7 @@ section {
 
 
 // third section
-.lookbook {
-  background-image: url(../assets/hero/image_3.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
 
-  .inner {
-    .copy {
-      text-align: center;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-    }
-  }
-}
 
 
 
