@@ -1,141 +1,120 @@
- /* first section */
- section {
-    position: relative;
-    min-height: 100vh;
-  }
-  
+section {
+  position: relative;
+}
 
-  // first section
-  .natural {
-    .inner {
-      padding-top: 224px;
-      .copy {
+// first section
+.natural {
+  .inner {
+    padding-top: 240px;
 
-      }
-      .img-outer {
-
-      }
-    }
-    .square {
-      bottom: 0;
-    }
-    .circle {
-
+    .copy {
+      max-width: 540px;
     }
 
+    .img-outer {}
   }
-  
-  @media only screen and (max-width: 760px) {
-    .natural {
-      justify-content: space-between;
-    }
-  }
-  
 
-  
-  div.copy h2,
-  div.copy-two h2,
-  div.copy-three h2,
-  div.copy-four h2 {
-    font-size: 120px;
-    line-height: 1;
+  .square {
+    bottom: 0;
   }
-  
-  div.circle {
+
+  .circle {
+    z-index: 2;
+    right: 10%;
+  }
+}
+
+// second section
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+.doing {
+  position: relative;
+
+  .marquee {
     position: absolute;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: #d9a724;
-  }
-  
-  div.square {
-    position: absolute;
-    width: 115px;
-    height: 115px;
-    background-color: #5982a0;
-  }
-  
-  div.square-two {
-    position: absolute;
-    width: 115px;
-    height: 115px;
-    background-color: #5982a0;
-  }
-  
-  /* second section */
-  
-  section.doing {
-  
-  }
-  
-  section.doing.content {
-    width: 100%;
+    top: 30%;
+    left: 0;
     display: flex;
-    justify-content: center;
     align-items: center;
-  }
-  
-  .content .copy-two {
-    position: absolute;
-    right: 75%;
-    top: 50%;
-    width: 550px;
-    transform: translateY(15%);
-  }
-  
-  div.copy-two h6 {
-    font-size: 26px;
-    max-width: 400px;
-    margin-top: 40px;
-  }
-  
-  
-  section.s2 div.circle {
-    background-color: #be3c52;
-  }
-  
-  section.s2 div.square {
-    background-color: #5f3736;
-  }
-  
-  
-  /* third section */
-  .lookbook {
-    background-image: url(../assets/hero/image_3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  
-  div.copy-three {
-    position: relative;
-    max-width: 500px;
-    text-align: center;
-  }
-  
-  div.copy-three h2 a:hover,
-  div.copy-four h2 a:hover {
-    cursor: pointer;
-    color: transparent;
-    -webkit-text-stroke: 3px #fff;
-  }
-  
+    height: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    z-index: 2;
 
-  // Fourth section: view our spring collection
-  .content .copy-four {
-    position: absolute;
-    left: 50%;
-    top: 100%;
-    width: 550px;
-    transform: translate(-65%, -45%);
+    span {
+      display: inline-block;
+      font-size: 230px;
+      line-height: 230px;
+      animation: marquee 45s linear infinite;
+    }
   }
-  
-  section.s4 div.circle {
-    background-color: #6e5f67;
+
+  .inner {
+
+
+
+
+    .img-outer {}
+
+    .circle {
+      background-color: #be3c52;
+    }
+
+    .square {
+      background-color: #5f3736;
+      top: 10%;
+      right: 30%;
+    }
   }
-  
-  .s4 .square-two {
-    background-color: #d54156 !important;
-    right: 50px;
+}
+
+
+// third section
+.lookbook {
+  background-image: url(../assets/hero/image_3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .inner {
+    .copy {
+      text-align: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
   }
-  
+}
+
+
+
+
+
+
+// Fourth section: view our spring collection
+.spring {
+  .inner {
+    .copy {}
+
+    .img-outer {}
+
+    .circle {
+      right: 80px;
+      background-color: #6e5f67;
+    }
+
+    .square {
+      background-color: #d54156;
+    }
+
+  }
+}

@@ -6,6 +6,7 @@
 @import "lookbook";
 @import "spring-collection";
 @import "common";
+@import "shapes";
 
 body {
     font-family: "HK Grotesk SemiBold", Arial, Helvetica, sans-serif;
@@ -23,7 +24,12 @@ a {
     color: #fff;
 }
 
-h1,h2,h3,h4,h5,h6,p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0;
 }
-

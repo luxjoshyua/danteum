@@ -3,7 +3,32 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1600px;
+    max-width: 1400px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 46px;
+}
+
+.padding {
+    padding: 200px 0;
+}
+
+h1 {
+
+}
+
+h2 {
+    font-size: 120px;
+    line-height: 100px; 
+}
+
+h6 {
+    font-size: 32px;
+    line-height: 38px;
+}
+
+h2,h6 a:hover {
+    cursor: pointer;
+    color: transparent;
+    -webkit-text-stroke: 3px #fff;
 }
