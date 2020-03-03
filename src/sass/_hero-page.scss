@@ -4,37 +4,52 @@ section {
 
 
 .hero {
-  
-  .heading {
-    text-align: center;
-    width: 100%;
-    margin-top: 2rem;
-    h1 {
-      font-size: 32vw;
-      font-weight: 700;
-      letter-spacing: -3px;
-      line-height: initial;
+
+  .hero-first-section {
+    background-color: salmon;
+    padding-top: 740px;
+
+    .heading {
+      position: fixed;
+      top: 0;
+      left: 0;
+
+      text-align: center;
+      width: 100%;
+      margin-top: 2rem;
+
+      h1 {
+        font-size: 32vw;
+        font-weight: 700;
+        letter-spacing: -3px;
+        line-height: initial;
+      }
+    }
+
+    .img-outer {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-left: 10em;
+
+      img {
+        width: 60vw;
+        height: 100%;
+      }
     }
   }
-  .img-outer {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: 10em;
-    img {
-      width: 60vw;
-      height: 100%; 
-    }
-  }
+
   .img2 {
     margin: 60vh 0 15vh;
-    padding-left: 5em; 
+    padding-left: 5em;
+
     img {
       width: 60%;
       height: 100%;
       filter: invert(100%);
     }
   }
+
   .square {
     bottom: 0;
     left: 20%;
@@ -52,6 +67,7 @@ section {
     p {
       font-size: 6vh;
       line-height: initial;
+
       &:not(:first-of-type) {
         padding-top: 32px;
       }
@@ -68,7 +84,9 @@ section {
       max-width: 540px;
     }
 
-    .img-outer {}
+    .img-outer {
+      mix-blend-mode: difference;
+    }
   }
 }
 
@@ -77,10 +95,12 @@ section {
 .gallery {
   min-height: 100vh;
   background-color: white;
+
   h1 {
     color: salmon;
     font-size: 15vh;
     line-height: initial;
+
     a:hover {
       color: sandybrown;
       transform: scale(1.5);
@@ -167,17 +187,20 @@ section {
 // Fourth section: view our spring collection
 .spring {
   overflow-x: hidden;
+
   .marquee {
     span {
       color: #ff4040;
     }
   }
+
   .inner {
     .copy {}
 
     .img-outer {
       max-width: 1200px;
       width: 100%;
+
       img {
         max-width: 100%;
       }

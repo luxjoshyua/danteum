@@ -1,16 +1,31 @@
 const heading = document.getElementById('heading-move');
-const windowHeight = window.innerHeight;
-const windowWidth = window.innerWidth;
-const scrollArea = 1000 - windowHeight;
+
+const heroSection = document.querySelector('.hero-first-section');
+const heroSectionHeight = heroSection.getBoundingClientRect().height;
+
+const widthText = heading.getBoundingClientRect().width;
+// console.log(widthText);
+
+// if we move 1px, will go left widthText / heroSectionHeight;
+const calculateMovement = widthText / heroSectionHeight;
+console.log(calculateMovement);
+
+
+const headingMove = () => {
+
+  const scrollTop = heroSection.getBoundingClientRect().top;
+  // console.log(scrollTop);
+
+
+  // for every 1px scrolled, we need to use var calculateMovement
+
+  const mathMovement = calculateMovement * scrollTop;
+  heading.style.transform = `translateX(${mathMovement}px)`;
+
+}
 
 
 // update position of heading when scroll event fires
-window.addEventListener('scroll', function() {
-  const scrollTop = window.pageYOffset || window.scrollTop;
-  console.log(scrollTop);
-  const scrollPercent = scrollTop/scrollArea || 0;
-  console.log(scrollPercent);
-  
-//   heading.style.left = scrollPercent*window.innerWidth + 'px';
-  heading.style.left = 800 - scrollPercent*window.innerWidth*0.6 + 'px';
+window.addEventListener('scroll', function () {
+  headingMove();
 });
