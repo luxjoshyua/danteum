@@ -41,24 +41,3 @@ div.progress {
     z-index: 1;
     transition: background-color 0.5s;
 }
-
-// stamps
-.stamps {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 50%;
-}
-
-.stamps img {
-    position: absolute;
-    /* centre the img in the middle of where we click */
-    transform: translate(-50%, -50%);
-    animation: spin 30s linear infinite;
-}
-
-// cursor
-a,
-body {
-    cursor: url(../assets/cursor-pizza-white.png), auto;
-}

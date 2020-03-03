@@ -4,7 +4,7 @@ section {
 
 
 .hero {
-  overflow-x: hidden;
+  
   .heading {
     text-align: center;
     width: 100%;
@@ -50,14 +50,13 @@ section {
     padding: 0 64px;
 
     p {
-      font-size: 8vh;
+      font-size: 6vh;
       line-height: initial;
       &:not(:first-of-type) {
         padding-top: 32px;
       }
     }
   }
-
 }
 
 // first section
@@ -71,9 +70,26 @@ section {
 
     .img-outer {}
   }
-
-
 }
+
+
+// gallery
+.gallery {
+  min-height: 100vh;
+  background-color: white;
+  h1 {
+    color: salmon;
+    font-size: 15vh;
+    line-height: initial;
+    a:hover {
+      color: sandybrown;
+      transform: scale(1.5);
+    }
+  }
+}
+
+
+
 
 // second section
 @keyframes marquee {
@@ -159,7 +175,13 @@ section {
   .inner {
     .copy {}
 
-    .img-outer {}
+    .img-outer {
+      max-width: 1200px;
+      width: 100%;
+      img {
+        max-width: 100%;
+      }
+    }
 
     .circle {
       right: 80px;

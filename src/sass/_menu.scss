@@ -59,7 +59,13 @@
       display: flex;
       justify-content: flex-end;
       align-items: center;
-      padding: 32px 32px 0 0;      
+      padding: 32px 32px 0 0;    
+    //   FIXME: this is breaking because of the huge overflow
+      ul {
+          position: absolute;
+          top: 50%;
+          right: 50%;
+      }  
   }
 
   ul,

@@ -3,11 +3,12 @@ import $ from "jquery";
 
 // import "./js/slideshow";
 import "./js/spring-collection";
-import "./js/stamps";
-// import "./js/progress-bar";
 // import "./js/content-fade";
-import "./js/parallax-shapes";
-import "./js/pixels-scrolled";
+// import "./js/parallax-shapes";
+
+
+import "./js/elements-move";
+
 
 
 
