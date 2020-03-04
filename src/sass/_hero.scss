@@ -4,20 +4,19 @@ section {
 
 
 .hero {
+  background-color: #ff4040;
 
   .hero-first-section {
-    background-color: salmon;
     padding-top: 740px;
 
     .heading {
       position: fixed;
       top: 0;
       left: 0;
-
       text-align: center;
       width: 100%;
       margin-top: 2rem;
-
+      
       h1 {
         font-size: 32vw;
         font-weight: 700;
@@ -31,6 +30,7 @@ section {
       justify-content: flex-start;
       align-items: center;
       margin-left: 10em;
+      mix-blend-mode: difference;
 
       img {
         width: 60vw;
@@ -40,13 +40,13 @@ section {
   }
 
   .img2 {
-    margin: 60vh 0 15vh;
+    margin: 40vh 0 15vh;
     padding-left: 5em;
 
     img {
       width: 60%;
       height: 100%;
-      filter: invert(100%);
+      // filter: invert(100%);
     }
   }
 

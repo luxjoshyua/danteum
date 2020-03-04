@@ -42,7 +42,7 @@
       background-color: #FFD363;
       width: 100%;
       position: fixed;
-      z-index: 3; 
+      z-index: 3;
       top: 0px;
       left: 0px;
       height: 100%;
@@ -58,43 +58,41 @@
       position: relative;
       display: flex;
       justify-content: flex-end;
-      align-items: center;
-      padding: 32px 32px 0 0;    
-    //   FIXME: this is breaking because of the huge overflow
+      align-items: flex-end;
+      flex-direction: column;
+      padding: 64px 84px 0 0;
+
       ul {
-          position: absolute;
-          top: 50%;
-          right: 50%;
-      }  
+       
+
+          li {
+              font-size: 120px;
+              line-height: 1.1;
+              text-align: right;
+          }
+
+          li a:hover {
+              cursor: pointer;
+              color: #FFD363;
+              -webkit-text-stroke: 3px #fff;
+          }
+
+      }
+
+      .social-links {
+          position: relative;
+
+        li {
+            font-size: 34px;
+        }
+          
+      }
+
+
+      ul,
+      li {
+          list-style-type: none;
+      }
   }
 
-  ul,
-  li {
-      list-style-type: none;
-  }
 
-  ul>li {
-      font-size: 120px;
-      line-height: 1.1;
-      text-align: right;
-  }
-
-  li a:hover {
-      cursor: pointer;
-      color: #FFD363;
-      -webkit-text-stroke: 3px #fff;
-  }
-
-  .social-links-nav {
-      position: relative;
-      transform: translate(-10%, 215%);
-  }
-
-  .social-links-nav ul li {
-      font-size: 34px;
-      text-align: right;
-  }
-
-  .social-links-nav ul li a:hover {
-      -webkit-text-stroke: 2px #fff;
-  }
