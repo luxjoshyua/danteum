@@ -1,9 +1,13 @@
 @font-face {
-    font-family: "HK Grotesk SemiBold";
-    src: url(../assets/fonts/hkgrotesk-semibold-webfont.woff), url(../assets/fonts/hkgrotesk-semibold-webfont.woff2);
+    font-family: "Sil";
+    src: url(../assets/fonts/SuisseIntlB.woff2) format("woff2"), url(../assets/fonts/SuisseIntlB.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "HK Grotesk Bold";
-    src: url(../assets/fonts/hkgrotesk-bold-webfont.woff), url(../assets/fonts/hkgrotesk-bold-webfont.woff2);
+    font-family: "Sil";
+    src: url(../assets/fonts/SuisseIntlM.woff2) format("woff2"), url(../assets/fonts/SuisseIntlM.woff) format("woff");
+    font-weight: 500;
+    font-style: normal;
 }

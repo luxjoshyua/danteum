@@ -41,11 +41,12 @@ section {
   }
 
   .img2 {
-    margin: 40vh 0 15vh;
+    margin: 20vh 0 15vh;
     padding-left: 5em;
+    mix-blend-mode: difference;
 
     img {
-      width: 60%;
+      width: 90%;
       height: 100%;
       // filter: invert(100%);
     }

@@ -1,3 +1,43 @@
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    .inner {
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 22px;
+        width: 100%;
+        
+        .left {
+            h3 {
+                font-size: 22px;
+                font-weight: 700;
+            }
+        }
+        .middle {
+            a {
+                font-size: 26px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+        }
+        .right {
+            p {
+                font-size: 20px;
+            }
+        }
+
+    }
+}  
+  
+  
+  
+  
+  
+  
+  
   header {
       position: absolute;
       top: 0;
@@ -32,12 +72,6 @@
       }
   }
 
-
-
-
-
-
-
   .menu {
       background-color: #FFD363;
       width: 100%;
@@ -63,8 +97,6 @@
       padding: 64px 84px 0 0;
 
       ul {
-       
-
           li {
               font-size: 120px;
               line-height: 1.1;
@@ -82,17 +114,12 @@
       .social-links {
           position: relative;
 
-        li {
-            font-size: 34px;
-        }
-          
+          li {
+              font-size: 34px;
+          }
       }
-
-
       ul,
       li {
           list-style-type: none;
       }
   }
-
-
