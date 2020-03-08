@@ -1,9 +1,9 @@
-@import "effects";
+@import "media-queries";
 @import "fonts";
-@import "footer";
 @import "hero";
 @import "menu";
 @import "common";
+@import "gallery";
 
 
 body {
@@ -12,8 +12,6 @@ body {
     font-weight: 400;
     font-size: 24px;
     color: #0a0a0a;
-    // background-color: #00F4B4;
-    background: white;
 }
 
 a {
@@ -52,4 +50,4 @@ p {
 
 .parallax-scroll {
     opacity: 0;
-  }
+}

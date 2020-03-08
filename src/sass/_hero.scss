@@ -7,7 +7,7 @@ section {
   // background-color: #ff4040;
 
   .hero-first-section {
-    padding-top: 580px;
+    padding-top: 12vh;
 
     .heading {
       position: fixed;
@@ -72,23 +72,6 @@ section {
 
 
 
-// gallery
-.gallery {
-  min-height: 100vh;
-  background-color: rgb(14, 235, 69);
-  margin-top: 20vh;
-
-  h1 {
-    color: salmon;
-    font-size: 15vh;
-    line-height: initial;
-
-    a:hover {
-      color: sandybrown;
-      transform: scale(1.5);
-    }
-  }
-}
 
 
 
@@ -124,23 +107,4 @@ section {
     padding-right: 34px;
     color: #00FF26;
   }
-}
-
-.doing {
-
-
-}
-
-
-// third section
-
-
-
-
-
-
-
-// Fourth section: view our spring collection
-.spring {
-  
 }
