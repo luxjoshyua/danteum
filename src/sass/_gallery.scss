@@ -12,6 +12,7 @@
         width: 100%;
         bottom: 0;
         white-space: nowrap;
+        z-index: 2;
 
         h1 {
             font-size: 20vh;
@@ -22,14 +23,14 @@
 
 
 .swiper-container {
-    overflow: visible;
-    margin-top: 84px;
+    margin-top: 14px;
 
     .swiper-slide {
         display: flex;
         flex-direction: column;
         padding: 0 20px;
-        margin-right: 160px;
+        // margin-right: 160px;
+        width: 400px !important;
 
         &:nth-child(odd) {
             flex-direction: column-reverse;
@@ -54,17 +55,19 @@
 
         img {
             width: 100%;
-            max-height: 800px;
             object-fit: contain;
             object-position: left;
         }
 
         .gallery-text {
+            position: absolute;
+            top: 100px;
+            right: 0;
             // opacity: 0;
             // transition: opacity 600ms ease;
-            margin: 10px 0;
+            // margin: 10px 0;
             font-style: italic;
-            font-size: 14px;
+            font-size: 12px;
             text-align: left;
             max-width: 400px;
         }

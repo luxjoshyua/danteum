@@ -1,8 +1,8 @@
 new Swiper(".gallery .swiper-container", {
     speed: 400,
-    spaceBetween: 100,
-    slidesPerView: 1,
-    initialSlide: 2,
+    spaceBetween: 160,
+    slidesPerView: 3,
+    initialSlide: 0,
     draggable: true,
     breakpoints: {
         600: {
