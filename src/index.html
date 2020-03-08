@@ -15,8 +15,8 @@
 </head>
 
 <!-- TODO: 
-    1. Get scroll effect working as seen here - shadynasty.online
-
+    1. Optimise all images to <= 150kb
+    
     2. Add in a horizontal scroll page, pretend interview with Ivan and Elena - https://collection-wakawaka.world/interview
 
     3. Get this effect working for the home page - http://yaleschoolofart.org/openstudios2019/
@@ -24,179 +24,107 @@
     4. Add in future scroll on all section blocks
 
     5. Try and get this marquee working for the intro - https://yir1819.lasalle.edu.sg/
+
+    6. Try and get this moveable text effect working on a child page https://www.nytimes.com/interactive/2020/02/27/opinion/2019-year-in-illustration.html
 -->
 
 
 <body>
+    <article>
+        <div class="scrolling-area">
+            <!-- nav -->
+            <nav>
+                <div class="inner">
+                    <div class="left">
+                        <p>DANTEUM</p>
+                    </div>
+                    <div class="middle">
+                        <a href="#">lookbook</a>
+                        <a href="#">interview</a>
+                        <a href="#">contact</a>
+                    </div>
+                    <div class="right">
+                        <p>COLLECTION NO1</p>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- hero -->
+            <section class="hero">
+                <div class="hero-first-section">
+                    <div class="heading">
+                        <h1 id="heading-move">
+                            DANTEUM
+                        </h1>
+                    </div>
+                    <div class="img-outer parallax-scroll" data-max-change="20">
+                        <img src="assets/hero/K1.jpg">
+                    </div>
+                </div>
+
+                <!-- second image -->
+                <div class="img-outer img2">
+                    <img src="assets/hero/beach.jpg" alt="Beach">
+                </div>
+
+
+
+                <!-- TODO: get this text to fade in like https://collection-wakawaka.world/ -->
+                <div class="copy parallax-scroll">
+                    <p style="color: red; font-size: 10vh;">
+                        fade in this text like <a href="https://collection-wakawaka.world/ ">collection-wakawaka
+                            
+                            but have it offest like maison
+                    </p>
+                    <p>
+                        We are a local clothing label that specialises in producing
+                        nothing at all, including jackets that will never be made,
+                        shoes that will never be run in, and hats that will never protect
+                        from any sun.
+                    </p>
+                    <p>
+                        We do this because we are young, and we will never afford the Australian
+                        dream, so we've chosen to dedicate our lives to planned obsolescence. This
+                        is all we can do, there really isn't anything more. Young, dumb and full of cum.
+                    </p>
+                </div>
+            </section>
 
 
 
 
 
-    <!-- <header>
-        <div class="header-wrapper">
-            <div class="menu-left">
-                <a class="menu-toggle">
-                    <h3>
-                        Valencia
-                    </h3>
-                </a>
-            </div>
-            <div class="menu-right">
-                <a class="menu-toggle">
-                    <img src="assets/eye-icon.svg">
-                </a>
-            </div>
-        </div>
-    </header> -->
-    <!-- menu -->
-    <!-- <div class="menu">
-        <nav class="menu-links">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="lookbook.html">Lookbooks</a></li>
-                <li><a href="interview.html">Interview</a></li>
-                <li><a href="spring-collection.html">Spring</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <ul class="social-links">
-                <li><a href="index.html">Facebook</a></li>
-                <li><a href="twitter.html">Twitter</a></li>
-                <li><a href="instagram.html">Instagram</a></li>
-                <li><a href="tumblr.html">Tumblr</a></li>
-            </ul>
-        </nav>
-    </div> -->
+            <!-- GALLERY -->
+            <section class="gallery">
 
-
-    <nav>
-        <div class="inner">
-            <div class="left">
-                <p>DANTEUM</p>
-            </div>
-            <div class="middle">
-                <a href="#">lookbook,</a>
-                <a href="#">interview,</a>
-                <a href="#">contact</a>
-            </div>
-            <div class="right">
-                <p>COLLECTION NO1</p>
-            </div>
-        </div>
-    </nav>
-
-    <section class="hero">
-        <div class="hero-first-section">
-            <div class="heading">
-                <h1 id="heading-move">
-                    DANTEUM
+                <h1>
+                    add a horizontal gallery here like <a href="https://www.deplacemaison.com/#">deplace maison</a>
                 </h1>
-            </div>
-            <div class="img-outer">
-                <img src="assets/hero/K1.jpg">
-            </div>
-        </div>
 
-        <!-- second image -->
-        <div class="img-outer img2">
-            <img src="assets/hero/beach.jpg" alt="Beach">
-        </div>
+
+            </section>
 
 
 
-        <!-- TODO: get this text to fade in like https://collection-wakawaka.world/ -->
-        <div class="copy">
-            <p style="color: red; font-size: 10vh;">
-                fade in this text like <a href="https://collection-wakawaka.world/ ">collection-wakawaka</a>
-                but have it offest like maison
-            </p>
-            <p>
-                We are a local clothing label that specialises in producing
-                nothing at all, including jackets that will never be made,
-                shoes that will never be run in, and hats that will never protect
-                from any sun.
-            </p>
-            <p>
-                We do this because we are young, and we will never afford the Australian
-                dream, so we've chosen to dedicate our lives to planned obsolescence. This
-                is all we can do, there really isn't anything more. Young, dumb and full of cum.
-            </p>
-        </div>
+
+
+            <!-- second section -->
+            <section class="chapter padding">
+
+            </section>
 
 
 
-        
-    </section>
 
 
+            <!--  -->
+            <section class="chapter padding">
 
-    <section class="gallery">
+            </section>
 
-        <h1>
-            add a horizontal gallery here like <a href="https://www.deplacemaison.com/#">deplace maison</a>
-        </h1>
-
-
-    </section>
-
-
-    <!-- second section -->
-    <section class="doing padding">
-        <div class="marquee">
-            <span>
-                doing one thing well
-            </span>
-            <span>doing one thing well</span>
-            <span>doing one thing well</span>
-            <span>doing one thing well</span>
-            <span>doing one thing well</span>
-            <span>doing one thing well</span>
-        </div>
-        <div class="inner">
-            <div class="img-outer">
-                <img src="assets/hero/E2.jpg">
-            </div>
 
         </div>
-    </section>
-
-
-
-
-
-    <!-- fourth section - spring collection -->
-    <section class="spring padding">
-        <div class="marquee">
-            <span>view our spring collection</span>
-            <span>view our spring collection</span>
-            <span>view our spring collection</span>
-            <span>view our spring collection</span>
-            <span>view our spring collection</span>
-        </div>
-        <div class="inner">
-            <div class="img-outer">
-                <!-- <a href="spring-collection.html"> -->
-                    <!-- <img src="assets/spring-collection/A2.jpg"> -->
-                <!-- </a> -->
-            </div>
-
-        </div>
-    </section>
-
-
-
-
-    <!-- footer -->
-    <footer class="padding">
-        <div class="social-links-footer">
-            <a href="facebook.com">Facebook</a>
-            <a href="twitter.com">Twitter</a>
-            <a href="instagram.com">Instagram</a>
-            <a href="tumblr.com">Tumblr</a>
-        </div>
-    </footer>
-
-
+    </article>
 </body>
 
 </html>

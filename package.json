@@ -40,6 +40,6 @@
     "last 2 versions"
   ],
   "dependencies": {
-    "jquery": "^3.4.1"
+    "future-scroll": "^1.1.5"
   }
 }

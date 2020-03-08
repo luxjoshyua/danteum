@@ -1,12 +1,11 @@
 import style from "./sass/index.scss";
-import $ from "jquery";
+
+import SmoothScrollingArticle, {
+    Item
+  } from "future-scroll";
+
+
 import "./js/elements-move";
+import "./js/smooth-scroll";
 
 
-
-
-// MENU TOGGLE
-$('.menu-toggle').on('click', function () {
-  $('.menu').toggleClass('open')
-  return false
-})

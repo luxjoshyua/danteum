@@ -12,16 +12,18 @@ body {
     font-weight: 400;
     font-size: 24px;
     color: #0a0a0a;
-    // background-color: #ecc7ab;
-    // background-color: #ff6e00;
-    background-color: #00F4B4;
-    margin: 0 auto;
-    transition: background-color 1s;
+    // background-color: #00F4B4;
+    background: white;
 }
 
 a {
     text-decoration: none;
     color: #000;
+
+    &:hover {
+        cursor: pointer;
+        transform: scaleX(-1);
+    }
 }
 
 h1,
@@ -33,3 +35,21 @@ h6,
 p {
     margin: 0;
 }
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.parallax-scroll {
+    opacity: 0;
+  }
