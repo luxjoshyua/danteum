@@ -4,19 +4,19 @@ section {
 
 
 .hero {
-  // background-color: #ff4040;
 
   .hero-first-section {
     padding-top: 12vh;
 
     .heading {
-      position: fixed;
+      // position: fixed;
+      position: absolute;
       top: 0;
       left: 0;
       text-align: center;
       width: 100%;
       margin-top: 2rem;
-      
+
       h1 {
         font-size: 32vw;
         font-weight: 700;
@@ -52,17 +52,29 @@ section {
     }
   }
 
+}
+
+.about {
+  &.padding {
+    padding: 140px 0;
+  }
+
   .copy {
     margin: 8vh auto 0;
-    padding: 0 64px;
+    padding: 0 124px;
+
+    .small-heading {
+      font-size: 2vh;
+    }
 
     p {
-      font-size: 6vh;
+      font-size: 5vh;
       line-height: initial;
 
       &:not(:first-of-type) {
         padding-top: 32px;
       }
+
     }
   }
 }
@@ -75,36 +87,3 @@ section {
 
 
 
-
-// second section
-@keyframes marquee {
-  0% {
-    transform: translate(0, 0);
-  }
-
-  100% {
-    transform: translate(-100%, 0);
-  }
-}
-
-// marquee effect
-.marquee {
-  position: absolute;
-  top: 30%;
-  left: 0;
-  display: flex;
-  align-items: center;
-  height: 50%;
-  white-space: nowrap;
-  overflow: hidden;
-  z-index: 2;
-
-  span {
-    display: inline-block;
-    font-size: 230px;
-    line-height: 230px;
-    animation: marquee 45s linear infinite;
-    padding-right: 34px;
-    color: #00FF26;
-  }
-}

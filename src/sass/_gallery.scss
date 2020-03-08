@@ -1,6 +1,6 @@
 // gallery
 .gallery {
-    min-height: 80vh;
+    min-height: 100vh;
     margin-top: 20vh;
     border: 3px solid #00F4B4;
     position: relative;
@@ -11,6 +11,7 @@
         transform: translate(-50%) !important;
         width: 100%;
         bottom: 0;
+        white-space: nowrap;
 
         h1 {
             font-size: 20vh;
@@ -22,12 +23,13 @@
 
 .swiper-container {
     overflow: visible;
+    margin-top: 84px;
 
     .swiper-slide {
-        width: 500px;
         display: flex;
         flex-direction: column;
         padding: 0 20px;
+        margin-right: 160px;
 
         &:nth-child(odd) {
             flex-direction: column-reverse;
@@ -52,7 +54,7 @@
 
         img {
             width: 100%;
-            max-height: 600px;
+            max-height: 800px;
             object-fit: contain;
             object-position: left;
         }
@@ -65,12 +67,6 @@
             font-size: 14px;
             text-align: left;
             max-width: 400px;
-
-            .green {
-                // color: $green;
-                color: blue;
-                font-size: 14px;
-            }
         }
 
         &.caption-visible .gallery-text {
