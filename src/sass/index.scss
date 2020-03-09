@@ -4,6 +4,7 @@
 @import "menu";
 @import "common";
 @import "gallery";
+@import "cursor";
 
 
 body {
@@ -12,8 +13,9 @@ body {
     font-weight: 400;
     font-size: 24px;
     // color: #0a0a0a;
-    background-color: black;
+    background-color: #0a0a0a;
     color: whitesmoke;
+    // cursor: none;
 }
 
 a {
@@ -41,7 +43,7 @@ p {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #000;
+    background: white;
     cursor: pointer;
     transition: all 1s ease;
 }

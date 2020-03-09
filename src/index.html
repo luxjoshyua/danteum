@@ -12,15 +12,20 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
 </head>
+
+
+
 
 <!-- TODO: 
     
-    2. Add in a horizontal scroll page, pretend interview with Ivan and Elena - https://collection-wakawaka.world/interview
+    - Add in a horizontal scroll page, pretend interview with Ivan and Elena - https://collection-wakawaka.world/interview
 
-    3. Get this effect working for the home page - http://yaleschoolofart.org/openstudios2019/
+    - Get this effect working for the home page - http://yaleschoolofart.org/openstudios2019/
 
-    6. Try and get this moveable text effect working on a child page https://www.nytimes.com/interactive/2020/02/27/opinion/2019-year-in-illustration.html
+    - Try and get this moveable text effect working on a child page https://www.nytimes.com/interactive/2020/02/27/opinion/2019-year-in-illustration.html
 
 -->
 
@@ -28,6 +33,13 @@
 <body>
     <article>
         <div class="scrolling-area">
+            <!-- custom cursor -->
+            <div class="cursor cursor--small"></div>
+            <canvas class="cursor cursor--canvas" resize></canvas>
+
+
+
+
             <!-- nav -->
             <nav>
                 <div class="inner">
@@ -53,13 +65,17 @@
                             DANTEUM
                         </h1>
                     </div>
-                    <div class="img-outer">
+                    <div class="img-outer parallax-scroll">
                         <img src="assets/hero/K1.jpg">
                     </div>
                 </div>
                 <!-- second image -->
-                <div class="img-outer img2 zoom-scroll parallax-scroll">
+                <div class="img-outer img2 parallax-scroll">
                     <img src="./assets/hero/gallery/tshirt-chloe-wise.jpg" alt="tshirt">
+                </div>
+                <!-- third image -->
+                <div class="img-outer img3 parallax-scroll">
+                    <img src="./assets/hero/F1.JPG" alt="forest">
                 </div>
             </section>
 
@@ -84,11 +100,8 @@
                 </div>
             </section>
 
-            <!-- GALLERY -->
+            <!-- gallery -->
             <section class="gallery" id="lookbook">
-
-
-
                 <div class="heading parallax-scroll">
                     <span>
                         DANTEUM N°16 - Spring Summer 2020
@@ -98,13 +111,6 @@
                         DANTEUM N°16 - Spring Summer 2020
                     </span>
                 </div>
-
-
-
-
-
-
-
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <!-- image -->

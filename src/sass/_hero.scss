@@ -42,14 +42,23 @@ section {
   }
 
   .img2 {
-    mix-blend-mode: difference;
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin: 15vh auto 25vh;
+    margin: 0 auto;
 
     img {
       // filter: invert(100%);
+      max-width: 800px;
+    }
+  }
+
+  .img3 {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 6em;
+
+    img {
+      max-width: 1200px;
     }
   }
 
@@ -79,12 +88,3 @@ section {
     }
   }
 }
-
-
-
-
-
-
-
-
-
