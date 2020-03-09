@@ -2,6 +2,12 @@ section {
   position: relative;
 }
 
+.chapter {
+  .copy {
+    padding: 0 124px;
+  }
+}
+
 
 .hero {
 
@@ -87,4 +93,18 @@ section {
 
     }
   }
+}
+
+
+.sources {
+  margin-top: 20vh;
+  .copy {
+    
+    h3 {
+      font-size: 8vh;
+      font-weight: 400;
+      line-height: 10vh;
+    }
+  }
+
 }
