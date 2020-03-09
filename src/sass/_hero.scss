@@ -6,7 +6,7 @@ section {
 .hero {
 
   .hero-first-section {
-    padding-top: 12vh;
+    padding-top: 740px;
 
     .heading {
       position: fixed;
@@ -22,7 +22,8 @@ section {
         font-weight: 700;
         letter-spacing: -3px;
         line-height: initial;
-        -webkit-text-stroke: 3px #fff;
+        -webkit-text-stroke: 3px #000;
+        color: darkturquoise;
       }
     }
 
@@ -41,13 +42,13 @@ section {
   }
 
   .img2 {
-    margin: 20vh 0 15vh;
-    padding-left: 5em;
     mix-blend-mode: difference;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15vh auto 25vh;
 
     img {
-      width: 90%;
-      height: 100%;
       // filter: invert(100%);
     }
   }

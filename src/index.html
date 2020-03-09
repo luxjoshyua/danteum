@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Valencia - luxjoshyua</title>
+    <title>Danteum - luxjoshyua</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,13 +15,13 @@
 </head>
 
 <!-- TODO: 
-    1. Optimise all images to <= 150kb
     
     2. Add in a horizontal scroll page, pretend interview with Ivan and Elena - https://collection-wakawaka.world/interview
 
     3. Get this effect working for the home page - http://yaleschoolofart.org/openstudios2019/
 
     6. Try and get this moveable text effect working on a child page https://www.nytimes.com/interactive/2020/02/27/opinion/2019-year-in-illustration.html
+
 -->
 
 
@@ -34,13 +34,13 @@
                     <div class="left">
                         <p>DANTEUM</p>
                     </div>
-                    <div class="middle">
-                        <a href="#">lookbook</a>
-                        <a href="#">interview</a>
+                    <div class="middle" id="navigation">
+                        <a href="#lookbook">lookbook</a>
+                        <a href="#interview">interview</a>
                         <a href="#">contact</a>
                     </div>
                     <div class="right">
-                        <p>COLLECTION NO1</p>
+                        <p>COLLECTION N°16</p>
                     </div>
                 </div>
             </nav>
@@ -58,13 +58,13 @@
                     </div>
                 </div>
                 <!-- second image -->
-                <div class="img-outer img2 zoom-scroll">
-                    <img src="assets/hero/beach.jpg" alt="Beach">
+                <div class="img-outer img2 zoom-scroll parallax-scroll">
+                    <img src="./assets/hero/gallery/tshirt-chloe-wise.jpg" alt="tshirt">
                 </div>
             </section>
 
 
-
+            <!-- about -->
             <section class="chapter about padding">
                 <div class="copy parallax-scroll">
                     <p class="small-heading">
@@ -82,79 +82,88 @@
                         is all we can do, there really isn't anything more. Young, dumb and full of cum.
                     </p>
                 </div>
-
             </section>
 
             <!-- GALLERY -->
-            <section class="gallery">
+            <section class="gallery" id="lookbook">
+
+
+
                 <div class="heading parallax-scroll">
-                    <h1>
+                    <span>
                         DANTEUM N°16 - Spring Summer 2020
-                    </h1>
+                        DANTEUM N°16 - Spring Summer 2020
+                        DANTEUM N°16 - Spring Summer 2020
+                        DANTEUM N°16 - Spring Summer 2020
+                        DANTEUM N°16 - Spring Summer 2020
+                    </span>
                 </div>
+
+
+
+
+
+
 
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <!-- image -->
                         <div class="swiper-slide">
-                            <img src="./assets/hero/gallery/prod1.jpg" alt="">
+                            <img src="./assets/hero/gallery/prod1.jpg" alt="crewneck">
                             <div class="gallery-text">
                                 <p>extra crew chloe wise</p>
                             </div>
                         </div>
                         <!-- image -->
                         <div class="swiper-slide">
-                            <img src="./assets/hero/gallery/prod4.jpg" alt="">
+                            <img src="./assets/hero/gallery/prod4.jpg" alt="denim pant">
                             <div class="gallery-text">
                                 <p>guest denim paint white</p>
                             </div>
                         </div>
                         <!-- image -->
                         <div class="swiper-slide">
-                            <img src="./assets/hero/gallery/prod2.jpg" alt="">
+                            <img src="./assets/hero/gallery/prod2.jpg" alt="tshirt">
                             <div class="gallery-text">
                                 <p>cosmic black</p>
                             </div>
                         </div>
                         <!-- image -->
                         <div class="swiper-slide">
-                            <img src="./assets/hero/gallery/prod3.jpg" alt="">
+                            <img src="./assets/hero/gallery/prod3.jpg" alt="tshirt">
                             <div class="gallery-text">
                                 <p>museum flexible space white</p>
                             </div>
                         </div>
                         <!-- image -->
                         <div class="swiper-slide">
-                            <img src="./assets/hero/gallery/gallery-placeholder.jpg" alt="">
+                            <img src="./assets/hero/gallery/prod5.jpg" alt="coat">
                             <div class="gallery-text">
-                                <p>product description</p>
+                                <p>critic chloe wise</p>
                             </div>
                         </div>
                         <!-- image -->
                         <div class="swiper-slide">
-                            <img src="./assets/hero/gallery/gallery-placeholder.jpg" alt="">
+                            <img src="./assets/hero/gallery/prod6.jpg" alt="longsleeve tshirt">
                             <div class="gallery-text">
-                                <p>product description</p>
+                                <p>desert stencil white</p>
                             </div>
                         </div>
                         <!-- image -->
                         <div class="swiper-slide">
-                            <img src="./assets/hero/gallery/gallery-placeholder.jpg" alt="">
+                            <img src="./assets/hero/gallery/prod7.jpg" alt="">
                             <div class="gallery-text">
-                                <p>product description</p>
+                                <p>unity definition wikipedia</p>
                             </div>
                         </div>
                         <!-- image -->
                         <div class="swiper-slide">
-                            <img src="./assets/hero/gallery/gallery-placeholder.jpg" alt="">
+                            <img src="./assets/hero/gallery/prod8.jpg" alt="coat">
                             <div class="gallery-text">
-                                <p>product description</p>
+                                <p>park wool mint</p>
                             </div>
                         </div>
-                        <!-- Add Scrollbar -->
-                        <div class="swiper-scrollbar"></div>
                     </div>
-
                 </div>
             </section>
 
@@ -166,7 +175,7 @@
 
 
 
-            <section class="chapter padding">
+            <section class="chapter padding" id="interview">
 
             </section>
 

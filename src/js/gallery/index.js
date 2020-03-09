@@ -1,7 +1,7 @@
 new Swiper(".gallery .swiper-container", {
-    speed: 400,
+    speed: 300,
     spaceBetween: 160,
-    slidesPerView: 3,
+    slidesPerView: 2,
     initialSlide: 0,
     draggable: true,
     breakpoints: {
@@ -11,11 +11,6 @@ new Swiper(".gallery .swiper-container", {
         1000: {
             slidesPerView: 3
         }
-    },
-    scrollbar: {
-        el: ".gallery .swiper-scrollbar",
-        draggable: true,
-        dragSize: 100
     }
     // on: {
     //     init: function () {
@@ -26,3 +21,4 @@ new Swiper(".gallery .swiper-container", {
     //     }
     // }
 });
+

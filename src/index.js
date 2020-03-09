@@ -1,13 +1,13 @@
 import style from "./sass/index.scss";
 
 import SmoothScrollingArticle, {
-    Item
-  } from "future-scroll";
+  Item
+} from "future-scroll";
 
 
 import "./js/elements-move";
 import "./js/gallery";
-
+import "./js/nav";
 
 
 
@@ -30,9 +30,9 @@ parallaxScroll.forEach(element => {
   const item = new Item({
     element
   });
-  const change = element.getAttribute("data-max-change")
-    ? element.getAttribute("data-max-change")
-    : 50;
+  const change = element.getAttribute("data-max-change") ?
+    element.getAttribute("data-max-change") :
+    50;
   // console.log(change);
 
   item.add({
@@ -78,6 +78,3 @@ new SmoothScrollingArticle({
     // document.querySelector(".block-network-ad-content")
   ]
 });
-
-
-
