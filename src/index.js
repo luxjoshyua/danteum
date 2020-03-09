@@ -5,7 +5,7 @@ import SmoothScrollingArticle, {
   } from "future-scroll";
 
 
-// import "./js/elements-move";
+import "./js/elements-move";
 import "./js/gallery";
 
 
