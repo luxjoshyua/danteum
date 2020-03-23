@@ -2,7 +2,7 @@ const artworkShow = document.querySelectorAll('.artwork-show');
 const artworkPreview = document.querySelectorAll('.artwork-preview');
 const accordionWrapper = document.querySelector('.accordions-wrapper');
 const accordions = document.querySelectorAll('.accordion');
-console.log("Getting 2 here!");
+
 
 artworkShow.forEach(link => {
     link.addEventListener('mouseover', e => {
