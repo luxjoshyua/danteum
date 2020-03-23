@@ -5,6 +5,7 @@ section {
 .chapter {
   .copy {
     padding: 0 4em;
+
     h3 {
       font-size: 8vh;
       font-weight: 400;
@@ -179,13 +180,16 @@ section {
           padding: .5rem 1.5rem;
           font-size: 18px;
         }
+
         .image-wrapper {
           display: flex;
           justify-content: center;
           align-items: center;
           padding: 2rem 0;
+
           .img {
             padding-right: 1rem;
+
             img {
               max-width: 700px;
               max-height: fit-content;
@@ -209,12 +213,20 @@ section {
 }
 
 .collage {
+  margin-top: 200rem;
+  background-color: peachpuff;
+
   &.padding {
     padding: 100px 0;
   }
+
   .collage-wrapper {
     background-color: white;
     margin: 0 4em;
     height: 100vh;
+  }
+
+  .collage-draw {
+    vertical-align: bottom;
   }
 }
