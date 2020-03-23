@@ -11,7 +11,7 @@
 // gallery
 .gallery {
     position: relative;
-    min-height: 110vh;
+    min-height: 100vh;
 
     .heading {
         position: absolute;
@@ -82,11 +82,10 @@
             right: 40px;
             // opacity: 0;
             // transition: opacity 600ms ease;
-            // margin: 10px 0;
             font-size: 12px;
             text-align: left;
             text-transform: uppercase;
-            max-width: 400px;
+            max-width: 90px;
             color: #0a0a0a;
         }
 

@@ -3,8 +3,10 @@ const artworkPreview = document.querySelectorAll('.artwork-preview');
 const accordionWrapper = document.querySelector('.accordions-wrapper');
 const accordions = document.querySelectorAll('.accordion');
 
+
 artworkShow.forEach(link => {
     link.addEventListener('mouseover', e => {
+        
         const accordionNode = e.target.parentNode.parentNode.parentNode;
         accordionNode.classList.add("show");
     })

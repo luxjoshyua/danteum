@@ -10,6 +10,7 @@ import "./js/gallery";
 import "./js/nav";
 // import "./js/cursor";
 import "./js/accordions";
+import "./js/collage";
 
 
 
