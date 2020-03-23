@@ -1,6 +1,6 @@
 const canvasTag = document.querySelector('.collage-draw');
 import img1 from "../../assets/collage/06.jpg";
-const collageWrapper = document.querySelector('.collage-wrapper');
+const collageWrapper = document.querySelector('.collage-wrapper canvas');
 
 
 
