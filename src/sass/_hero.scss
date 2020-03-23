@@ -5,6 +5,11 @@ section {
 .chapter {
   .copy {
     padding: 0 4em;
+    h3 {
+      font-size: 8vh;
+      font-weight: 400;
+      line-height: 10vh;
+    }
   }
 }
 
@@ -96,14 +101,6 @@ section {
 
 .sources {
   margin-top: 20vh;
-
-  .copy {
-    h3 {
-      font-size: 8vh;
-      font-weight: 400;
-      line-height: 10vh;
-    }
-  }
 
   .accordions-wrapper {
     position: relative;
@@ -202,11 +199,22 @@ section {
         .accordion-body-content {
           height: auto;
           opacity: 1;
-          transition: height 5s, opacity .25s ease-in-out;
+          transition: opacity .25s ease-in-out;
         }
       }
     }
 
   }
 
+}
+
+.collage {
+  &.padding {
+    padding: 100px 0;
+  }
+  .collage-wrapper {
+    background-color: white;
+    margin: 0 4em;
+    height: 100vh;
+  }
 }

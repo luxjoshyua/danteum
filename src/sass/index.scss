@@ -25,6 +25,7 @@ a {
     &:hover {
         cursor: pointer;
         transform: scaleX(-1);
+        transition: all .3s ease-in-out;
     }
 }
 
@@ -38,19 +39,19 @@ p {
     margin: 0;
 }
 
-// ::-webkit-scrollbar {
-//     width: 15px;
-// }
+::-webkit-scrollbar {
+    width: 15px;
+}
 
-// ::-webkit-scrollbar-thumb {
-//     background: white;
-//     cursor: pointer;
-//     transition: all 1s ease;
-// }
+::-webkit-scrollbar-thumb {
+    background: white;
+    cursor: pointer;
+    transition: all 1s ease;
+}
 
-// ::-webkit-scrollbar-track {
-//     background: transparent;
-// }
+::-webkit-scrollbar-track {
+    background: transparent;
+}
 
 .parallax-scroll {
     opacity: 0;
