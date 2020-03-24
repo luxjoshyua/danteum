@@ -53,10 +53,13 @@ const images = [
 })
 
 collageWrapper.addEventListener('mousemove', (event) => {
-    aimX = event.pageX
-    aimY = event.pageY
+    // aimX = event.pageX
+    aimX = event.offsetX
+    aimY = event.offsetY
+    // aimY = event.pageY
     if (currentX === null) {
         currentX = event.pageX
+        // console.log("Current X is", currentX)
         currentY = event.pageY
     }
 
@@ -72,10 +75,13 @@ canvasTag.addEventListener('click', () => {
 
 
 const draw = () => {
+    // console.log("getting to here");
+    console.log(currentX)
     if (currentX) {
         // complete checks if image has been loaded by browser
         // console.log("correctly logging", event)
         if (images[i].complete) {
+            // console.log(currentX, currentY)
             context.drawImage(images[i], currentX - 200, currentY - 300, 400, 600)
         }
 
