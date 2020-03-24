@@ -8,6 +8,12 @@ import img6 from "../../assets/collage/31.png";
 import img7 from "../../assets/collage/55.png";
 import img8 from "../../assets/collage/58.jpg";
 import img9 from "../../assets/collage/62.jpg";
+import img10 from "../../assets/collage/apricot.png";
+import img11 from "../../assets/collage/banana.png";
+import img12 from "../../assets/collage/garfield.jpg";
+import img13 from "../../assets/collage/starfish.png";
+import img14 from "../../assets/collage/pussyriot.jpg";
+
 
 const collageWrapper = document.querySelector('.collage-wrapper');
 
@@ -44,7 +50,12 @@ const images = [
     img6,
     img7,
     img8,
-    img9
+    img9,
+    img10,
+    img11,
+    img12,
+    img13,
+    img14
     // .map takes the input and turns it into something new
 ].map(src => {
     const image = document.createElement('img')
@@ -76,7 +87,7 @@ canvasTag.addEventListener('click', () => {
 
 const draw = () => {
     // console.log("getting to here");
-    console.log(currentX)
+    // console.log(currentX)
     if (currentX) {
         // complete checks if image has been loaded by browser
         // console.log("correctly logging", event)

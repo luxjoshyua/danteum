@@ -11,7 +11,7 @@
 // gallery
 .gallery {
     position: relative;
-    min-height: 100vh;
+    min-height: 120vh;
 
     .heading {
         position: absolute;
@@ -35,6 +35,7 @@
 
 .swiper-container {
     margin-top: 32px;
+    cursor: grab;
 
     .swiper-slide {
         display: flex;
