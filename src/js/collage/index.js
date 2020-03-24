@@ -12,7 +12,6 @@ import img9 from "../../assets/collage/62.jpg";
 const collageWrapper = document.querySelector('.collage-wrapper');
 
 
-
 // window.innerWidth is how wide the screen is
 canvasTag.width = window.innerWidth * 2
 canvasTag.height = window.innerHeight * 2
