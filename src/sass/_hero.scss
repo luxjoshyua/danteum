@@ -28,7 +28,6 @@ section {
       text-align: center;
       width: 100%;
       margin-top: 2rem;
-      z-index: 1;
 
       h1 {
         font-size: 32vw;
@@ -58,10 +57,11 @@ section {
     display: flex;
     justify-content: center;
     margin: 0 auto;
+    mix-blend-mode: difference;
 
     img {
       // filter: invert(100%);
-      max-width: 800px;
+      max-width: 60vw; 
     }
   }
 
