@@ -11,11 +11,14 @@ import "./js/nav";
 // import "./js/cursor";
 import "./js/accordions";
 import "./js/collage";
+import "./js/konami";
 
 
 
 
-
+// Add in wacky console message
+console.log("%c This is an experimentation site of Joshua Fielding, a frontend developer, reach out at josh.e.fielding@gmail.com", 
+  "font-size: 50px;background:red;text-shadow:10px 10px 0 blue");
 
 
 
