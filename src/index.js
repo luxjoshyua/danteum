@@ -5,13 +5,17 @@ import SmoothScrollingArticle, {
 } from "future-scroll";
 
 
+import "./js/accordions";
+// import "./js/cursor";
+import "./js/collage";
 import "./js/elements-move";
 import "./js/gallery";
-import "./js/nav";
-// import "./js/cursor";
-import "./js/accordions";
-import "./js/collage";
 import "./js/konami";
+import "./js/nav";
+
+
+
+
 
 
 
@@ -25,7 +29,6 @@ console.log("%c This is an experimentation site of Joshua Fielding, a frontend d
 
 
 // Future Scroll
-
 const map = (x, a, b, c, d) => ((x - a) * (d - c)) / (b - a) + c;
 
 // parallax scroll

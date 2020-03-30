@@ -3,7 +3,7 @@ const secretCode = 'danteum';
 
 window.addEventListener('keyup', (e) => {
     // tell what key user has pressed
-    console.log(e.key);
+    // console.log(e.key);
     // push the key pressed into our empty array
     pressed.push(e.key);
     // limit to seven characters (danteum)
@@ -14,6 +14,6 @@ window.addEventListener('keyup', (e) => {
         cornify_add();
     }
 
-    console.log(pressed)
+    // console.log(pressed)
     
 })
