@@ -7,7 +7,6 @@
 @import "cursor";
 @import "interview";
 
-
 body {
     // font-family: Helvetica Neue;
     font-family: "Sil";
@@ -26,7 +25,11 @@ a {
     &:hover {
         cursor: pointer;
         transform: scaleX(-1);
-        transition: all .3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    &:visited {
+        font-style: italic;
     }
 }
 
