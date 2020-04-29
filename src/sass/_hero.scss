@@ -1,239 +1,232 @@
 section {
-  position: relative;
+    position: relative;
 }
 
 .chapter {
-  .copy {
-    padding: 0 4em;
+    .copy {
+        padding: 0 4em;
 
-    h3 {
-      font-size: 8vh;
-      font-weight: 400;
-      line-height: 10vh;
+        h3 {
+            font-size: 8vh;
+            font-weight: 400;
+            line-height: 10vh;
+        }
     }
-  }
 }
 
-
 .hero {
+    .hero-first-section {
+        // padding-top: 740px;
+        padding-top: 240px;
 
-  .hero-first-section {
-    padding-top: 740px;
+        .heading {
+            position: fixed;
+            // position: absolute;
+            top: 0;
+            left: 0;
+            text-align: center;
+            width: 100%;
+            margin-top: 2rem;
 
-    .heading {
-      position: fixed;
-      // position: absolute;
-      top: 0;
-      left: 0;
-      text-align: center;
-      width: 100%;
-      margin-top: 2rem;
+            h1 {
+                font-size: 32vw;
+                font-weight: 700;
+                letter-spacing: -3px;
+                line-height: initial;
+                -webkit-text-stroke: 3px #000;
+                color: darkturquoise;
+            }
+        }
 
-      h1 {
-        font-size: 32vw;
-        font-weight: 700;
-        letter-spacing: -3px;
-        line-height: initial;
-        -webkit-text-stroke: 3px #000;
-        color: darkturquoise;
-      }
+        .img-outer {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-left: 10em;
+            mix-blend-mode: difference;
+
+            img {
+                width: 60vw;
+                height: 100%;
+            }
+        }
     }
 
-    .img-outer {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      margin-left: 10em;
-      mix-blend-mode: difference;
+    .img2 {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        mix-blend-mode: difference;
 
-      img {
-        width: 60vw;
-        height: 100%;
-      }
+        img {
+            // filter: invert(100%);
+            max-width: 60vw;
+        }
     }
-  }
 
-  .img2 {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    mix-blend-mode: difference;
+    .img3 {
+        display: flex;
+        justify-content: center;
+        padding: 0 5em;
 
-    img {
-      // filter: invert(100%);
-      max-width: 60vw; 
+        img {
+            max-width: 100%;
+        }
     }
-  }
-
-  .img3 {
-    display: flex;
-    justify-content: center;
-    padding: 0 5em;
-
-    img {
-      max-width: 100%;
-    }
-  }
-
 }
 
 .about {
-  padding: 20px 0;
+    padding: 20px 0;
 
-  .copy {
-    margin: 8vh auto 0;
+    .copy {
+        margin: 8vh auto 0;
 
-    .small-heading {
-      font-size: 2vh;
+        .small-heading {
+            font-size: 2vh;
+        }
+
+        p {
+            font-size: 5vh;
+            line-height: initial;
+
+            &:not(:first-of-type) {
+                padding-top: 32px;
+            }
+        }
     }
-
-    p {
-      font-size: 5vh;
-      line-height: initial;
-
-      &:not(:first-of-type) {
-        padding-top: 32px;
-      }
-    }
-  }
 }
 
 .sources {
-  margin-top: 20vh;
+    margin-top: 20vh;
 
-  .accordions-wrapper {
-    position: relative;
-    z-index: 2;
-    padding-top: 32px;
-
-    .accordion {
-      position: relative;
-      border-top: 1px solid white;
-      border-bottom: 1px solid white;
-      width: 100%;
-
-      .content {
+    .accordions-wrapper {
         position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 1.5rem 0;
-        flex-direction: column;
+        z-index: 2;
+        padding-top: 32px;
 
-        a {
-          text-align: center;
+        .accordion {
+            position: relative;
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+            width: 100%;
 
-          &:hover {
-            transform: none;
-          }
-        }
+            .content {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 1.5rem 0;
+                flex-direction: column;
 
-        .artwork-link {
-          margin: 0 auto;
+                a {
+                    text-align: center;
 
-          &:hover {
-            font-style: italic;
-          }
-        }
+                    &:hover {
+                        transform: none;
+                    }
+                }
 
-        .expand-link {
-          position: absolute;
-          right: 1em;
-          font-size: 22px;
-        }
+                .artwork-link {
+                    margin: 0 auto;
 
-      }
+                    &:hover {
+                        font-style: italic;
+                    }
+                }
 
-      .artwork-preview {
-        position: absolute;
-        top: 50%;
-        left: 10%;
-        display: none;
-
-        img {
-          max-width: 100%;
-          max-height: 340px;
-        }
-
-        &.right {
-          left: inherit;
-          right: 10%;
-        }
-
-      }
-
-      &.show {
-        .artwork-preview {
-          display: block;
-        }
-      }
-
-      .accordion-body-content {
-        padding: 0 4rem;
-        height: 0;
-        opacity: 0;
-        max-width: 45rem;
-
-        p {
-          padding: .5rem 1.5rem;
-          font-size: 18px;
-        }
-
-        .image-wrapper {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          padding: 2rem 0;
-
-          .img {
-            padding-right: 1rem;
-
-            img {
-              max-width: 700px;
-              max-height: fit-content;
-              width: 100%;
+                .expand-link {
+                    position: absolute;
+                    right: 1em;
+                    font-size: 22px;
+                }
             }
-          }
-        }
-      }
 
-      &.active {
-        .accordion-body-content {
-          height: auto;
-          opacity: 1;
-          transition: opacity .25s ease-in-out;
+            .artwork-preview {
+                position: absolute;
+                top: 50%;
+                left: 10%;
+                display: none;
+
+                img {
+                    max-width: 100%;
+                    max-height: 340px;
+                }
+
+                &.right {
+                    left: inherit;
+                    right: 10%;
+                }
+            }
+
+            &.show {
+                .artwork-preview {
+                    display: block;
+                }
+            }
+
+            .accordion-body-content {
+                padding: 0 4rem;
+                height: 0;
+                opacity: 0;
+                max-width: 45rem;
+
+                p {
+                    padding: 0.5rem 1.5rem;
+                    font-size: 18px;
+                }
+
+                .image-wrapper {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 2rem 0;
+
+                    .img {
+                        padding-right: 1rem;
+
+                        img {
+                            max-width: 700px;
+                            max-height: fit-content;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            &.active {
+                .accordion-body-content {
+                    height: auto;
+                    opacity: 1;
+                    transition: opacity 0.25s ease-in-out;
+                }
+            }
         }
-      }
     }
-
-  }
-
 }
 
 .collage {
-  margin-top: 10rem;
+    margin-top: 10rem;
 
-  &.padding {
-    padding: 100px 0;
-  }
+    &.padding {
+        padding: 100px 0;
+    }
 
-  .copy {
-    padding: 2em 4em;
-  }
+    .copy {
+        padding: 2em 4em;
+    }
 
-  .collage-wrapper {
-    position: relative;
-    z-index: 5;
-    background-color: white;
-    margin: 0 4em;
-    height: 120vh;
-    cursor: url("../assets/cursor-blue.svg"), auto;
-  }
+    .collage-wrapper {
+        position: relative;
+        z-index: 5;
+        background-color: white;
+        margin: 0 4em;
+        height: 120vh;
+        cursor: url("../assets/cursor-blue.svg"), auto;
+    }
 
-  .collage-draw {
-    vertical-align: bottom;
-    width: 100% !important;
-    height: 100% !important;
-
-  }
+    .collage-draw {
+        vertical-align: bottom;
+        width: 100% !important;
+        height: 100% !important;
+    }
 }
