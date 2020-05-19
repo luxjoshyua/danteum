@@ -16,24 +16,12 @@ new Swiper(".gallery .swiper-container", {
 
 new Swiper(".gallery-two .swiper-container", {
   speed: 300,
-  spaceBetween: 20,
+  spaceBetween: 80,
   slidesPerView: 1,
   initialSlide: 0,
   draggable: true,
-  breakpoints: {
-    600: {
-      slidesPerView: 1,
-    },
-    1000: {
-      slidesPerView: 1,
-    },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
-  // on: {
-  //     init: function () {
-  //         setSwiperClasses(this);
-  //     },
-  //     slideChange: function () {
-  //         setSwiperClasses(this);
-  //     }
-  // }
 });
