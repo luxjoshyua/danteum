@@ -1,9 +1,9 @@
 import style from "./sass/index.scss";
 
-import SmoothScrollingArticle, { Item } from "future-scroll";
+// import SmoothScrollingArticle, { Item } from "future-scroll";
 
 import "./js/accordions";
-import "./js/cursor";
+// import "./js/cursor";
 import "./js/collage";
 import "./js/elements-move";
 import "./js/gallery";
