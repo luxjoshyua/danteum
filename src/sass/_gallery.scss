@@ -12,7 +12,6 @@
 .gallery {
   position: relative;
   min-height: 120vh;
-
   .heading {
     position: absolute;
     left: 50%;
@@ -22,7 +21,6 @@
     white-space: nowrap;
     z-index: 2;
     align-items: center;
-
     span {
       font-size: 20vh;
       font-weight: 400;
@@ -40,42 +38,30 @@
     display: flex;
     flex-direction: column;
     padding: 0 20px;
-
     &:nth-child(odd) {
       flex-direction: column-reverse;
-
-      // .gallery-text {
-      //     text-align: right;
-      //     margin-left: auto;
-      //     left: 0;
-      // }
     }
-
     &:nth-child(even) {
       .gallery-text {
         right: initial;
         left: 40px;
       }
     }
-
     @include md {
       &:first-of-type {
         display: none;
       }
     }
-
     @include sm {
       &:last-of-type {
         display: none;
       }
     }
-
     img {
       width: 100%;
       object-fit: contain;
       object-position: left;
     }
-
     .gallery-text {
       position: absolute;
       top: 100px;
@@ -88,17 +74,61 @@
       max-width: 90px;
       color: #0a0a0a;
     }
-
     &.caption-visible .gallery-text {
       opacity: 1;
     }
   }
+}
 
-  .swiper-scrollbar {
-    background: #41817a75;
-    border-radius: 0;
-    height: 3px;
-    width: calc(100% - 20px);
-    max-width: 900px;
+.gallery-two {
+  .swiper-slide {
+    padding: 0;
+  }
+  .gallery-item {
+    border: 1px solid $white;
+    min-height: 60vh;
+    margin: 0 64px;
+    .gallery-inner {
+      display: flex;
+      .content,
+      .img-outer {
+        max-width: 50%;
+      }
+      .img-outer {
+        background-size: contain;
+        background-position: center center;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 60%;
+        &.img1 {
+          background-image: url("../assets/gallery-two/gallery-two-parka.jpg");
+        }
+        &.img2 {
+          background-image: url("../assets/gallery-two/gallery-two-shirt.jpg");
+        }
+        &.img3 {
+          background-image: url("../assets/gallery-two/gallery-two-jumper.jpg");
+        }
+      }
+      .content-inner {
+        padding: 22px;
+        .heading {
+          padding-bottom: 16px;
+        }
+        .copy {
+          padding: 0;
+          margin-bottom: 64px;
+        }
+        .btn {
+          border-radius: 20px;
+          border: 2px solid $white;
+          padding: 12px;
+          &:hover {
+            color: $lime-green;
+            border: 2px solid $lime-green;
+          }
+        }
+      }
+    }
   }
 }
