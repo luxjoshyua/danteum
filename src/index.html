@@ -2,63 +2,53 @@
 <html class="no-js">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Danteum - luxjoshyua</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="description" content="A Danteum playground" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+    <script type="text/javascript" src="https://www.cornify.com/js/cornify.js"></script>
+    <script src="https://kit.fontawesome.com/eb605637ff.js" crossorigin="anonymous"></script>
 </head>
 
-
-
-
 <!-- TODO: 
-    
-    - Resize image F1 to be under 150kb and crop out the white on the right
-
+    - Get this text ripple effect working on a section - https://omotesando.eu/
     - Add in a horizontal scroll page, pretend interview with Ivan and Elena - https://collection-wakawaka.world/interview
-
     - Get this effect working for the home page - http://yaleschoolofart.org/openstudios2019/
-
     - Try and get this moveable text effect working on a child page https://www.nytimes.com/interactive/2020/02/27/opinion/2019-year-in-illustration.html
-
 -->
-
 
 <body>
     <article>
         <div class="scrolling-area">
             <!-- custom cursor -->
-            <div class="cursor cursor--small"></div>
-            <canvas class="cursor cursor--canvas" resize></canvas>
-
-
-
+            <canvas class="cursor cursor--canvas"></canvas>
+            <canvas id="shader"></canvas>
 
             <!-- nav -->
             <nav>
                 <div class="inner">
-                    <div class="left">
-                        <p>DANTEUM</p>
+                    <div class="left mouse-shadow-area">
+                        <a href="index.html">
+                            <p class="brand-text">DANTEUM</p>
+                        </a>
                     </div>
                     <div class="middle" id="navigation">
-                        <a href="#lookbook">lookbook</a>
-                        <a href="#interview">interview</a>
+                        <a class="smooth-nav-link" href="#lookbook">lookbook</a>
+                        <a href="interview.html">interview</a>
                         <a href="#">contact</a>
                     </div>
-                    <div class="right">
-                        <p>COLLECTION N°16</p>
+                    <div class="right mouse-shadow-area">
+                        <p class="brand-text">COLLECTION N°16</p>
                     </div>
                 </div>
             </nav>
-
             <!-- hero -->
             <section class="hero">
                 <div class="hero-first-section">
@@ -67,20 +57,22 @@
                             DANTEUM
                         </h1>
                     </div>
-                    <div class="img-outer parallax-scroll">
-                        <img src="assets/hero/K1.jpg">
+                    <!-- <div class="img-outer parallax-scroll">
+                        <img src="assets/hero/K1.jpg" loading="lazy" />
+                    </div> -->
+                    <div class="img-outer parallax-scroll plane">
+                        <img src="assets/hero/K1.jpg" loading="lazy" />
                     </div>
                 </div>
                 <!-- second image -->
                 <div class="img-outer img2 parallax-scroll">
-                    <img src="./assets/hero/gallery/tshirt-chloe-wise.jpg" alt="tshirt">
+                    <img src="./assets/hero/gallery/tshirt-chloe-wise.jpg" alt="tshirt" loading="lazy" />
                 </div>
                 <!-- third image -->
                 <div class="img-outer img3 parallax-scroll">
-                    <img src="./assets/hero/F1.JPG" alt="forest">
+                    <img src="./assets/hero/F1.JPG" alt="forest" loading="lazy" />
                 </div>
             </section>
-
 
             <!-- about -->
             <section class="chapter about padding">
@@ -90,14 +82,15 @@
                     </p>
                     <p>
                         Danteum is a local clothing label that specialises in producing
-                        nothing at all, including jackets that will never be made,
-                        shoes that will never be run in, and hats that will never protect
-                        from any sun.
+                        nothing at all, including jackets that will never be made, shoes
+                        that will never be run in, and hats that will never protect from
+                        any sun.
                     </p>
                     <p>
-                        We do this because we are young, and we will never afford the Australian
-                        dream, so we've chosen to dedicate our lives to planned obsolescence. This
-                        is all we can do, there really isn't anything more. Young, dumb and full of cum.
+                        We do this because we are young, and we will never afford the
+                        Australian dream, so we've chosen to dedicate our lives to planned
+                        obsolescence. This is all we can do, there really isn't anything
+                        more. Young, dumb and full of cum.
                     </p>
                 </div>
             </section>
@@ -106,67 +99,65 @@
             <section class="gallery" id="lookbook">
                 <div class="heading parallax-scroll">
                     <span>
-                        DANTEUM N°16 - Spring Summer 2020
-                        DANTEUM N°16 - Spring Summer 2020
-                        DANTEUM N°16 - Spring Summer 2020
-                        DANTEUM N°16 - Spring Summer 2020
-                        DANTEUM N°16 - Spring Summer 2020
+                        DANTEUM N°16 - Spring Summer 2020 DANTEUM N°16 - Spring Summer
+                        2020 DANTEUM N°16 - Spring Summer 2020 DANTEUM N°16 - Spring
+                        Summer 2020 DANTEUM N°16 - Spring Summer 2020
                     </span>
                 </div>
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <!-- image -->
                         <div class="swiper-slide">
-                            <img src="./assets/hero/gallery/prod1.jpg" alt="crewneck">
+                            <img src="./assets/hero/gallery/prod1.jpg" alt="crewneck" loading="lazy" />
                             <div class="gallery-text">
                                 <p>extra crew chloe wise</p>
                             </div>
                         </div>
                         <!-- image -->
                         <div class="swiper-slide">
-                            <img src="./assets/hero/gallery/prod4.jpg" alt="denim pant">
+                            <img src="./assets/hero/gallery/prod4.jpg" alt="denim pant" loading="lazy" />
                             <div class="gallery-text">
                                 <p>guest denim paint white</p>
                             </div>
                         </div>
                         <!-- image -->
                         <div class="swiper-slide">
-                            <img src="./assets/hero/gallery/prod2.jpg" alt="tshirt">
+                            <img src="./assets/hero/gallery/prod2.jpg" alt="tshirt" loading="lazy" />
                             <div class="gallery-text">
                                 <p>cosmic black</p>
                             </div>
                         </div>
                         <!-- image -->
                         <div class="swiper-slide">
-                            <img src="./assets/hero/gallery/prod3.jpg" alt="tshirt">
+                            <img src="./assets/hero/gallery/prod3.jpg" alt="tshirt" loading="lazy" />
                             <div class="gallery-text">
                                 <p>museum flexible space white</p>
                             </div>
                         </div>
                         <!-- image -->
                         <div class="swiper-slide">
-                            <img src="./assets/hero/gallery/prod5.jpg" alt="coat">
+                            <img src="./assets/hero/gallery/prod5.jpg" alt="coat" loading="lazy" />
                             <div class="gallery-text">
                                 <p>critic chloe wise</p>
                             </div>
                         </div>
                         <!-- image -->
                         <div class="swiper-slide">
-                            <img src="./assets/hero/gallery/prod6.jpg" alt="longsleeve tshirt">
+                            <img src="./assets/hero/gallery/prod6.jpg" alt="longsleeve tshirt" loading="lazy" />
                             <div class="gallery-text">
                                 <p>desert stencil white</p>
                             </div>
                         </div>
                         <!-- image -->
                         <div class="swiper-slide">
-                            <img src="./assets/hero/gallery/prod7.jpg" alt="">
+                            <img src="./assets/hero/gallery/prod7.jpg" alt="" loading="lazy" />
                             <div class="gallery-text">
                                 <p>unity definition wikipedia</p>
                             </div>
                         </div>
                         <!-- image -->
                         <div class="swiper-slide">
-                            <img src="./assets/hero/gallery/prod8.jpg" alt="coat">
+                            <img src="./assets/hero/gallery/prod8.jpg" alt="coat" loading="lazy" />
                             <div class="gallery-text">
                                 <p>park wool mint</p>
                             </div>
@@ -175,70 +166,502 @@
                 </div>
             </section>
 
-
-
-
-
-
-
-    <!-- TODO: try and get this to work for a collected
-     material / inspo section https://studio-laucke-siebein.com/ -->
-
+            <!-- accordions -->
             <section class="chapter padding sources">
                 <div class="copy parallax-scroll">
                     <h3>
-                        Here is some of our most recent materiel that helped
-                        shaped N°16
+                        Here is some of our recent materiel that helped shaped N°16
                     </h3>
                 </div>
-
                 <!-- accordions -->
                 <div class="accordions-wrapper">
                     <!-- accordion one -->
                     <div class="accordion">
                         <div class="content">
-                            <a href="#" class="artwork-link artwork-show">
-                                UNTITLED 001
+                            <a href="#">
+                                <span class="artwork-link artwork-show">
+                                    UNTITLED 001
+                                </span>
+                                <span class="expand-link artwork-show">
+                                    +
+                                </span>
                             </a>
-                            <a href="#" class="expand-link artwork-show">
-                                +
-                            </a>
+                            <div class="accordion-body-content">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                                    nostrum veniam facere, quaerat quos repellat minus quo
+                                    excepturi, maiores adipisci accusantium ducimus similique
+                                    consectetur placeat suscipit unde laboriosam recusandae
+                                    nobis?
+                                </p>
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Laborum illo nam ipsam ab aspernatur consequatur! Eligendi,
+                                    ut, dolorum quidem pariatur consequuntur similique, aperiam
+                                    repellat voluptatum impedit rem laboriosam inventore
+                                    deleniti.
+                                </p>
+                                <div class="image-wrapper">
+                                    <div class="img">
+                                        <img src="./assets/sources/JasmineDeporta_76-800x1200.jpg" alt="Woods"
+                                            loading="lazy" />
+                                    </div>
+                                    <div class="img">
+                                        <img src="./assets/sources/JasmineDeporta_77-1-800x1200.jpg" alt="Woods"
+                                            loading="lazy" />
+                                    </div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Doloremque quidem cupiditate dolores deserunt veritatis quo
+                                    tempore, atque voluptatem, blanditiis at eum. Totam corrupti
+                                    necessitatibus, repudiandae labore recusandae obcaecati
+                                    itaque architecto.
+                                </p>
+                                <div class="image-wrapper">
+                                    <div class="img">
+                                        <img src="./assets/sources/JasmineDeporta_78-1-800x1200.jpg" alt=""
+                                            loading="lazy" />
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="artwork-preview left">
-                            <img src="./assets/sources/JasmineDeporta_17-800x1200.jpg" alt="">
+                            <img src="./assets/sources/JasmineDeporta_17-800x1200.jpg" alt="" loading="lazy" />
                         </div>
                     </div>
                     <!-- accordion two -->
                     <div class="accordion">
                         <div class="content">
-                            <a href="#" class="artwork-link artwork-show">
-                                UNTITLED 002
+                            <a href="#">
+                                <span class="artwork-link artwork-show">
+                                    UNTITLED 002
+                                </span>
+                                <span class="expand-link artwork-show">
+                                    +
+                                </span>
                             </a>
-                            <a href="#" class="expand-link artwork-show">
-                                +
-                            </a>
+                            <div class="accordion-body-content">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Eius minima ea repellat aperiam distinctio maiores sit
+                                    deleniti ipsa voluptas soluta! Porro libero quos ipsum ab,
+                                    quasi nobis et eveniet eius?
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Reiciendis aperiam quidem iure officiis nisi consequuntur
+                                    voluptatum impedit consequatur, possimus sit, nostrum
+                                    pariatur optio. Expedita, esse animi architecto qui aliquam
+                                    placeat?
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                                    facere, assumenda, amet temporibus impedit ducimus illum
+                                    reprehenderit nam, accusamus cumque quis aliquid sint?
+                                    Asperiores nobis facere ratione nemo sed corrupti.
+                                </p>
+                                <div class="image-wrapper">
+                                    <div class="img">
+                                        <img src="./assets/sources/JasmineDeporta_10-800x1200.jpg" alt=""
+                                            loading="lazy" />
+                                    </div>
+                                </div>
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Error tempore cum veritatis recusandae! Amet tempore nulla
+                                    culpa, deleniti dignissimos vero. Repellendus, voluptas.
+                                    Illo, voluptate reiciendis ad quae vel veritatis autem?
+                                </p>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Officia voluptates dicta debitis quia exercitationem
+                                    sapiente mollitia quasi cumque, earum eum perspiciatis
+                                    reprehenderit quo blanditiis, unde, eveniet rem neque sit
+                                    sequi.
+                                </p>
+                                <div class="image-wrapper">
+                                    <div class="img">
+                                        <img src="./assets/sources/JasmineDeporta_11-800x1200.jpg" alt=""
+                                            loading="lazy" />
+                                    </div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Tempore sint voluptatibus laudantium blanditiis esse
+                                    doloribus fugiat tempora animi rem quidem necessitatibus
+                                    repellendus, at quibusdam quia sunt molestias voluptate quae
+                                    molestiae!
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Enim fugiat dicta suscipit minima, repudiandae excepturi
+                                    cumque omnis nesciunt? Recusandae quae quam maxime impedit
+                                    ad dicta nostrum rerum? Exercitationem, quas consequatur?
+                                </p>
+                                <div class="image-wrapper">
+                                    <div class="img">
+                                        <img src="./assets/sources/JasmineDeporta_16-800x1200.jpg" alt=""
+                                            loading="lazy" />
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="artwork-preview right">
-                            <img src="./assets/sources/JasmineDeporta_27-800x1200.jpg" alt="">
+                            <img src="./assets/sources/JasmineDeporta_30-800x1200.jpg" alt="" loading="lazy" />
                         </div>
                     </div>
-
+                    <!-- accordion three -->
+                    <div class="accordion">
+                        <div class="content">
+                            <a href="#">
+                                <span class="artwork-link artwork-show">
+                                    UNTITLED 003
+                                </span>
+                                <span class="expand-link artwork-show">
+                                    +
+                                </span>
+                            </a>
+                            <div class="accordion-body-content">
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Libero voluptatum eius, nam ex accusantium mollitia tempora
+                                    labore excepturi enim fugiat recusandae iure alias, facere
+                                    commodi ipsa maxime laborum culpa repellendus?
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Voluptas tempora totam asperiores fugiat voluptatem rerum
+                                    ducimus ullam eaque distinctio nulla quidem accusamus,
+                                    mollitia et ad, deserunt voluptates modi natus commodi!
+                                </p>
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Repudiandae cum dignissimos nihil corrupti. Ex eveniet iste
+                                    voluptas corporis adipisci pariatur, harum, quidem, eaque
+                                    itaque asperiores cum. Temporibus placeat illo eaque.
+                                </p>
+                                <div class="image-wrapper">
+                                    <div class="img">
+                                        <img src="./assets/sources/JasmineDeporta_18-800x1200.jpg" alt=""
+                                            loading="lazy" />
+                                    </div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Eveniet consequatur voluptate aliquid mollitia laudantium
+                                    saepe, odio atque modi labore, doloribus harum a ipsum
+                                    aperiam velit sint repellat culpa ex dolore?
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Explicabo ut voluptatibus voluptates, doloribus veritatis
+                                    aperiam ducimus inventore animi, blanditiis harum ab! Ex
+                                    porro maxime doloremque labore amet, quibusdam a iusto.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="artwork-preview left">
+                            <img src="./assets/sources/JasmineDeporta_65-800x1200.jpg" alt="" loading="lazy" />
+                        </div>
+                    </div>
+                    <!-- accordion four -->
+                    <div class="accordion">
+                        <div class="content">
+                            <a href="#">
+                                <span class="artwork-link artwork-show">
+                                    UNTITLED 004
+                                </span>
+                                <span class="expand-link artwork-show">
+                                    +
+                                </span>
+                            </a>
+                            <div class="accordion-body-content">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Amet nesciunt provident eveniet, atque magnam quis sit
+                                    libero eos quas aperiam deleniti! Architecto, quisquam
+                                    veritatis expedita reprehenderit delectus maxime voluptates
+                                    accusantium?
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                                    libero rem at quas eligendi. Est vel quis maxime vitae!
+                                    Asperiores porro qui suscipit totam veniam aut. Quidem
+                                    dolores neque molestias.
+                                </p>
+                                <div class="image-wrapper">
+                                    <div class="img">
+                                        <img src="./assets/sources/JasmineDeporta_29-800x1200.jpg" alt=""
+                                            loading="lazy" />
+                                    </div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Harum in deleniti exercitationem voluptate, dicta blanditiis
+                                    nobis atque praesentium itaque tempore cum doloribus
+                                    corrupti deserunt pariatur veritatis amet repudiandae esse
+                                    illo?
+                                </p>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Assumenda veritatis voluptates, mollitia atque sequi ipsum?
+                                    Numquam inventore cupiditate distinctio. Similique
+                                    laboriosam quibusdam neque molestias temporibus ipsum maxime
+                                    rem, ducimus ipsam?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="artwork-preview right">
+                            <img src="./assets/sources/JasmineDeporta_13-800x1200.jpg" alt="" loading="lazy" />
+                        </div>
+                    </div>
+                    <!-- accordion five -->
+                    <div class="accordion">
+                        <div class="content">
+                            <a href="#">
+                                <span class="artwork-link artwork-show">
+                                    UNTITLED 005
+                                </span>
+                                <span class="expand-link artwork-show">
+                                    +
+                                </span>
+                            </a>
+                            <div class="accordion-body-content">
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Ipsum, illum expedita neque aliquid maiores dignissimos
+                                    consequuntur ea. Incidunt aspernatur, sequi dolor nemo,
+                                    delectus ratione, ipsum soluta tenetur minus enim
+                                    necessitatibus?
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Veritatis expedita eum asperiores illo iure at labore sunt
+                                    ducimus dolor? Corrupti repellendus ex labore, et corporis
+                                    enim obcaecati quaerat recusandae aut.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Deleniti laudantium distinctio quae quas doloribus optio,
+                                    debitis assumenda eaque delectus eos itaque quam veritatis
+                                    magnam non accusantium nisi id molestiae voluptate!
+                                </p>
+                                <div class="image-wrapper">
+                                    <div class="img">
+                                        <img src="./assets/sources/JasmineDeporta_37-800x1200.jpg" alt=""
+                                            loading="lazy" />
+                                    </div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Enim non sit maxime illum mollitia architecto asperiores
+                                    optio dolores ut suscipit, possimus veritatis itaque
+                                    assumenda impedit quia tenetur explicabo, iusto sunt?
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Dicta, harum, sunt numquam neque iste minima repellat
+                                    facilis ipsam cum voluptatibus impedit, dolor aliquid
+                                    debitis hic maxime ab voluptates ullam eius.
+                                </p>
+                                <div class="image-wrapper">
+                                    <div class="img">
+                                        <img src="./assets/sources/JasmineDeporta_42-800x1200.jpg" alt=""
+                                            loading="lazy" />
+                                    </div>
+                                </div>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Nostrum, optio ex! Quia officiis unde dolore debitis facilis
+                                    tempore? Quidem illo aperiam adipisci doloribus similique
+                                    magnam! Ipsa, dolores? Magni, dolor fuga?
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Atque delectus fugiat ducimus officiis soluta dolor maiores,
+                                    rerum culpa recusandae eius quibusdam aperiam dolorem nam
+                                    dolore repellendus excepturi! Provident, quisquam possimus.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="artwork-preview left">
+                            <img src="./assets/sources/JasmineDeporta_27-800x1200.jpg" alt="" loading="lazy" />
+                        </div>
+                    </div>
+                    <!-- accordion six -->
+                    <div class="accordion">
+                        <div class="content">
+                            <a href="#">
+                                <span class="artwork-link artwork-show">
+                                    UNTITLED 006
+                                </span>
+                                <span class="expand-link artwork-show">
+                                    +
+                                </span>
+                            </a>
+                            <div class="accordion-body-content">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Atque, eligendi dolores! Amet similique animi eaque dolor,
+                                    facere ipsum! Doloribus voluptate quibusdam sed ex delectus
+                                    ut deserunt dolorem nulla facilis iste.
+                                </p>
+                                <div class="image-wrapper">
+                                    <div class="img">
+                                        <img src="./assets/sources/JasmineDeporta_51-800x1200.jpg" alt=""
+                                            loading="lazy" />
+                                    </div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Asperiores deleniti quam pariatur nostrum ipsam harum
+                                    praesentium, placeat quas quo facere? Vero doloremque
+                                    voluptatibus praesentium atque nostrum optio aut, recusandae
+                                    autem?
+                                </p>
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Quaerat, dolore. Sunt accusamus est accusantium labore porro
+                                    recusandae quam, nulla delectus sequi, neque exercitationem
+                                    impedit distinctio dolor animi similique. Laboriosam, vero.
+                                </p>
+                                <div class="image-wrapper">
+                                    <div class="img">
+                                        <img src="./assets/sources/JasmineDeporta_54-800x1200.jpg" alt=""
+                                            loading="lazy" />
+                                    </div>
+                                    <div class="img">
+                                        <img src="./assets/sources/JasmineDeporta_55-800x1200.jpg" alt=""
+                                            loading="lazy" />
+                                    </div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Ducimus, nobis accusamus adipisci esse voluptate eum ad
+                                    vitae dolorem nostrum consequatur laboriosam neque? Corporis
+                                    dolore reprehenderit quos, neque cumque veniam ut!
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Quos pariatur recusandae necessitatibus cupiditate officia
+                                    maxime deserunt enim explicabo cumque voluptates, tempora
+                                    temporibus quisquam unde dolorem, ex earum, voluptate
+                                    distinctio soluta!
+                                </p>
+                                <div class="image-wrapper">
+                                    <div class="img">
+                                        <img src="./assets/sources/JasmineDeporta_59-800x1200.jpg" alt=""
+                                            loading="lazy" />
+                                    </div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Fuga dolorum ut vitae? Sit error omnis tenetur. Iusto
+                                    debitis dolore eligendi placeat temporibus minus! Dicta
+                                    ipsam id quaerat quo ad corporis.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="artwork-preview right">
+                            <img src="./assets/sources/JasmineDeporta_44-800x1200.jpg" alt="" loading="lazy" />
+                        </div>
+                    </div>
                 </div>
-
-
             </section>
 
-
-
-
-
-
-            <section class="chapter padding">
-
+            <!-- collage no16 -->
+            <section class="chapter collage padding">
+                <div class="copy parallax-scroll">
+                    <h3>
+                        Here is a collage we created during N°16
+                    </h3>
+                </div>
+                <div class="collage-wrapper">
+                    <canvas class="collage-draw"></canvas>
+                </div>
             </section>
 
-
-        </div>
+            <!-- second gallery -->
+            <section class="chapter gallery-two padding">
+                <div class="swiper-outer">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <!-- gallery item one -->
+                            <div class="gallery-item swiper-slide">
+                                <div class="gallery-inner">
+                                    <div class="content">
+                                        <div class="content-inner">
+                                            <h1 class="heading">CLOTHING ONE</h1>
+                                            <p class="copy">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                Vivamus porttitor erat turpis, sit amet tempus eros rutrum
+                                                convallis. Pellentesque eu ullamcorper sapien, sit amet
+                                                finibus lectus. Suspendisse vel dapibus dolor.
+                                            </p>
+                                            <a href="#" class="btn">
+                                                <span>read more</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="img-outer img1"></div>
+                                </div>
+                            </div>
+                            <!-- gallery item two -->
+                            <div class="gallery-item swiper-slide">
+                                <div class="gallery-inner">
+                                    <div class="content">
+                                        <div class="content-inner">
+                                            <h1 class="heading">CLOTHING TWO</h1>
+                                            <p class="copy">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                Vivamus porttitor erat turpis, sit amet tempus eros rutrum
+                                                convallis. Pellentesque eu ullamcorper sapien, sit amet
+                                                finibus lectus. Suspendisse vel dapibus dolor.
+                                            </p>
+                                            <a href="#" class="btn">
+                                                <span>read more</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="img-outer img2"></div>
+                                </div>
+                            </div>
+                            <!-- gallery item three -->
+                            <div class="gallery-item swiper-slide">
+                                <div class="gallery-inner">
+                                    <div class="content">
+                                        <div class="content-inner">
+                                            <h1 class="heading">CLOTHING THREE</h1>
+                                            <p class="copy">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                Vivamus porttitor erat turpis, sit amet tempus eros rutrum
+                                                convallis. Pellentesque eu ullamcorper sapien, sit amet
+                                                finibus lectus. Suspendisse vel dapibus dolor.
+                                            </p>
+                                            <a href="#" class="btn">
+                                                <span>read more</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="img-outer img3"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- arrows -->
+                        <div class="swiper-arrows-wrapper">
+                            <div class="swiper-arrows-inner">
+                                <div class="swiper-button-prev">
+                                    <i class="fas fa-long-arrow-alt-left"></i>
+                                </div>
+                                <div class="swiper-button-next">
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
     </article>
 </body>
 

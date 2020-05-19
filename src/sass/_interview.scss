@@ -1,0 +1,32 @@
+#interview {
+    padding: 0;
+    width: calc(100vw + 1427.22078vh);
+}
+
+.page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+}
+
+.interview-hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00b784;
+    display: flex;
+    align-items: center;
+
+    .interview-img {
+        background-image: url("../assets/interview/interview-placeholder.jpg");
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 79vh;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

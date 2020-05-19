@@ -1,7 +1,7 @@
 const NAV = document.getElementById("navigation");
 
 //check links for click and smooth scroll to
-Array.from(NAV.querySelectorAll("a")).forEach(link => {
+Array.from(NAV.querySelectorAll(".smooth-nav-link")).forEach(link => {
     link.addEventListener("click", e => {
       e.preventDefault();
       window.scrollTo({

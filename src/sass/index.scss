@@ -1,31 +1,36 @@
 @import "media-queries";
+@import "variables";
 @import "fonts";
 @import "hero";
 @import "menu";
 @import "common";
 @import "gallery";
 @import "cursor";
-
+@import "interview";
+@import "shader";
 
 body {
-    // font-family: Helvetica Neue;
-    font-family: "Sil";
-    font-weight: 400;
-    font-size: 24px;
-    // color: #0a0a0a;
-    background-color: #0a0a0a;
-    color: whitesmoke;
-    // cursor: none;
+  // font-family: Helvetica Neue;
+  font-family: "Sil";
+  font-weight: 400;
+  font-size: 24px;
+  background-color: #0a0a0a;
+  color: whitesmoke;
+  overflow-x: hidden;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
-
-    &:hover {
-        cursor: pointer;
-        transform: scaleX(-1);
-    }
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    cursor: pointer;
+    transform: scaleX(-1);
+    transition: all 0.3s ease-in-out;
+    color: $lime-green;
+  }
+  &:visited {
+    font-style: italic;
+  }
 }
 
 h1,
@@ -35,23 +40,24 @@ h4,
 h5,
 h6,
 p {
-    margin: 0;
+  margin: 0;
 }
 
-// ::-webkit-scrollbar {
-//     width: 15px;
-// }
+::-webkit-scrollbar {
+  width: 15px;
+}
 
-// ::-webkit-scrollbar-thumb {
-//     background: white;
-//     cursor: pointer;
-//     transition: all 1s ease;
-// }
+::-webkit-scrollbar-thumb {
+  background: white;
+  cursor: pointer;
+  transition: all 1s ease;
+}
 
-// ::-webkit-scrollbar-track {
-//     background: transparent;
-// }
+::-webkit-scrollbar-track {
+  background: transparent;
+}
 
 .parallax-scroll {
-    opacity: 0;
+  //   opacity: 0;
+  opacity: 1;
 }
