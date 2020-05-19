@@ -88,7 +88,7 @@
     margin: 0 auto;
   }
   .swiper-container {
-    overflow: visible;
+    overflow: hidden;
     margin-top: 0;
     .swiper-wrapper {
       padding-left: 32px;
@@ -102,7 +102,7 @@
   }
   .gallery-item {
     border: 2px solid $white;
-    min-height: 60vh;
+    max-height: 640px;
     .gallery-inner {
       display: flex;
       .content,
@@ -114,7 +114,7 @@
         background-position: center center;
         width: 100%;
         height: 100%;
-        padding-bottom: 70%;
+        padding-bottom: 50%;
         &.img1 {
           background-image: url("../assets/gallery-two/gallery-two-parka.jpg");
         }
@@ -148,7 +148,7 @@
   }
   .swiper-arrows-wrapper {
     position: absolute;
-    top: 100%;
+    top: 90%;
     min-height: 60px;
     width: 100%;
     .swiper-arrows-inner {
