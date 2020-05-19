@@ -7,7 +7,6 @@
     <title>Danteum - luxjoshyua</title>
     <meta name="description" content="A Danteum playground" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
@@ -30,6 +29,7 @@
         <div class="scrolling-area">
             <!-- custom cursor -->
             <canvas class="cursor cursor--canvas"></canvas>
+            <canvas id="shader"></canvas>
 
             <!-- nav -->
             <nav>
@@ -57,7 +57,10 @@
                             DANTEUM
                         </h1>
                     </div>
-                    <div class="img-outer parallax-scroll">
+                    <!-- <div class="img-outer parallax-scroll">
+                        <img src="assets/hero/K1.jpg" loading="lazy" />
+                    </div> -->
+                    <div class="img-outer parallax-scroll plane">
                         <img src="assets/hero/K1.jpg" loading="lazy" />
                     </div>
                 </div>
