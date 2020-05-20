@@ -1,7 +1,6 @@
 import style from "./sass/index.scss";
 
 // import SmoothScrollingArticle, { Item } from "future-scroll";
-
 import "./js/accordions";
 import "./js/cursor";
 import "./js/collage";
@@ -10,6 +9,7 @@ import "./js/gallery";
 import "./js/konami";
 import "./js/nav";
 import "./js/mouse-move-shadow";
+import "./js/shader";
 
 // Add in wacky console message
 // console.log(

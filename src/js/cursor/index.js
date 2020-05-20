@@ -1,35 +1,48 @@
 const canvas = document.querySelector(".cursor--canvas");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
-
 const context = canvas.getContext("2d");
+let color1 = "120,20,255";
 
-// randomColor generator
-var randomColor = Math.floor(Math.random() * 16777215).toString(16);
-
-// set a randomColor
-context.strokeStyle = "#" + randomColor;
 context.lineWidth = 260;
 context.shadowBlur = 200;
 // end of the line
 context.lineCap = "round";
 
-// by default false
-// let shouldPaint = true;
+// Create gradient
+let grd = context.createLinearGradient(0, 0, canvas.width, 0);
+grd.addColorStop(0, "rgb(" + color1 + ")");
+grd.addColorStop(1, "white");
+
+// Fill with gradient
+// context.fillStyle = grd;
+context.strokeStyle = grd;
+// context.fillRect(0, 0, canvas.width, canvas.height);
+
+const setStrokeColour = () => {
+  const color1 = "255,179,186";
+  const color2 = "255,223,186";
+  const color3 = "255,255,186";
+  const color4 = "186,255,201";
+  const color5 = "186,225,255";
+
+  let myColors = [
+    "255,179,186",
+    "255,223,186",
+    "255,255,186",
+    "186,255,201",
+    "186,225,255",
+  ];
+
+  let randomColor = myColors[Math.floor(Math.random() * myColors.length)];
+};
 
 document.addEventListener("mousedown", (e) => {
-  shouldPaint = true;
   context.moveTo(e.pageX, e.pageY);
   context.beginPath();
 });
 
-// document.addEventListener("mouseup", (e) => {
-//   shouldPaint = false;
-// });
-
 document.addEventListener("mousemove", (e) => {
-  //   if (shouldPaint) {
   context.lineTo(e.pageX, e.pageY);
   context.stroke();
-  //   }
 });

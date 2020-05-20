@@ -6,18 +6,18 @@
   height: 100vh;
 }
 
-.plane {
-  position: relative;
-  width: 80%;
-  max-width: 1400px;
-  height: 80vh;
-  top: 10vh;
-  margin: 0 auto;
+// .plane {
+//   position: relative;
+//   width: 80%;
+//   max-width: 1400px;
+//   height: 80vh;
+//   top: 10vh;
+//   margin: 0 auto;
 
-  img {
-    display: none;
-  }
-}
+//   img {
+//     display: none;
+//   }
+// }
 
 /*** in case of error show the image ***/
 .no-curtains .plane {
