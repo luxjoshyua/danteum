@@ -14,8 +14,9 @@ section {
 }
 
 .hero {
+  mix-blend-mode: multiply;
   .hero-first-section {
-    padding-top: 740px;
+    padding-top: 740px;    
     .heading {
       position: fixed;
       top: 0;
@@ -48,7 +49,7 @@ section {
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    mix-blend-mode: difference;
+    // mix-blend-mode: difference;
     padding-top: 6em;
     img {
       // filter: invert(100%);
