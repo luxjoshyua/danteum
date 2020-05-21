@@ -13,7 +13,7 @@ import "./js/mouse-move-shadow";
 // Add in wacky console message
 console.log(
   "%c This is an experimentation site of Joshua Fielding, a frontend developer, reach out at josh.e.fielding@gmail.com",
-  "font-size: 50px;background:red;text-shadow:10px 10px 0 blue"
+  "font-size: 50px;background:#00ff00;text-shadow:10px 10px 0 blue"
 );
 
 // Future Scroll
@@ -44,30 +44,9 @@ parallaxScroll.forEach((element) => {
   items.push(item);
 });
 
-// zoom scroll
-// const zoomScroll = document.querySelectorAll(".zoom-scroll");
-
-// zoomScroll.forEach(element => {
-//   const zoomItem = new Item({
-//     element
-//   });
-//   zoomItem.add({
-//     ease: 0.1, //ease is how smooth you want the animation to move lower is smoother, but may cause performance issues.
-//     render: (image, current) => {
-//       //current will be 0-1
-//       //render receives 2 params, the element, and the current position on page from bottom to top of screen
-//       //bottom is 0
-//       //top is 1
-//       const scale = map(current, 0, 1, 1, 1.1);
-//       image.style.transform = `scale3d(${scale},${scale},1)`;
-//     }
-//   });
-//   items.push(zoomItem);
-// });
-
-// new SmoothScrollingArticle({
-//   article: document.querySelector("article"),
-//   scrollable: document.querySelector(".scrolling-area"),
-//   items: items,
-//   fixedParents: [document.querySelector("#heading-move")],
-// });
+new SmoothScrollingArticle({
+  article: document.querySelector("article"),
+  scrollable: document.querySelector(".scrolling-area"),
+  items: items,
+  //   fixedParents: [document.querySelector("#heading-move")],
+});
