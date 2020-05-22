@@ -13,9 +13,9 @@
   .heading {
     position: absolute;
     left: 50%;
-    transform: translate(-50%) !important;
+    transform: rotate(-5deg);
     width: 100%;
-    top: 20%;
+    top: 30%;
     white-space: nowrap;
     z-index: 2;
     align-items: center;
@@ -23,7 +23,8 @@
       font-size: 8rem;
       font-weight: 400;
       display: inline-block;
-      animation: marquee 125s linear infinite;
+      animation: marquee 15s linear infinite;
+      //   animation-delay: 4s;
     }
   }
 }
@@ -72,6 +73,13 @@
     }
     &.caption-visible .gallery-text {
       opacity: 1;
+    }
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    // color: $white;
+    &:hover {
+      color: $lime-green;
     }
   }
 }
