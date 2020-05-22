@@ -18,7 +18,7 @@
     top: 30%;
     white-space: nowrap;
     z-index: 2;
-    align-items: center;
+    pointer-events: none;
     span {
       font-size: 8rem;
       font-weight: 400;
@@ -36,7 +36,6 @@
   .swiper-slide {
     display: flex;
     flex-direction: column;
-    // padding: 0 20px;
     &:nth-child(odd) {
       flex-direction: column-reverse;
     }
@@ -77,7 +76,8 @@
   }
   .swiper-button-prev,
   .swiper-button-next {
-    // color: $white;
+    min-width: 60px;
+    min-height: 60px;
     &:hover {
       color: $lime-green;
     }
