@@ -2,7 +2,6 @@ new Swiper(".gallery .swiper-container", {
   speed: 300,
   spaceBetween: 160,
   slidesPerView: 2,
-  initialSlide: 0,
   draggable: true,
   navigation: {
     nextEl: ".swiper-button-next",
