@@ -36,7 +36,7 @@
   .swiper-slide {
     display: flex;
     flex-direction: column;
-    padding: 0 20px;
+    // padding: 0 20px;
     &:nth-child(odd) {
       flex-direction: column-reverse;
     }
