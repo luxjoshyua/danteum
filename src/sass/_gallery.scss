@@ -2,7 +2,6 @@
   0% {
     transform: translate(0, 0);
   }
-
   100% {
     transform: translate(-100%, 0);
   }
@@ -11,7 +10,6 @@
 // gallery
 .gallery {
   position: relative;
-  //   min-height: 120vh;
   .heading {
     position: absolute;
     left: 50%;
@@ -22,7 +20,7 @@
     z-index: 2;
     align-items: center;
     span {
-      font-size: 20vh;
+      font-size: 8rem;
       font-weight: 400;
       display: inline-block;
       animation: marquee 125s linear infinite;
@@ -131,6 +129,7 @@
         .copy {
           padding: 0;
           margin-bottom: 64px;
+          font-size: 0.875rem;
         }
         .btn {
           border-radius: 20px;
@@ -156,7 +155,6 @@
       .swiper-button-prev,
       .swiper-button-next {
         color: $white;
-        // background-color: red;
         &:after {
           content: "";
         }
