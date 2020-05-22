@@ -30,12 +30,15 @@
 }
 
 .swiper-container {
-  margin-top: 32px;
   cursor: grab;
-
+  margin-left: 3rem;
+  .swiper-wrapper {
+    max-height: 80vh;
+  }
   .swiper-slide {
     display: flex;
     flex-direction: column;
+    max-height: 80vh;
     &:nth-child(odd) {
       flex-direction: column-reverse;
     }
@@ -59,12 +62,14 @@
       width: 100%;
       object-fit: contain;
       object-position: left;
+      max-height: 80vh;
     }
     .gallery-text {
       position: absolute;
       top: 100px;
-      right: 40px;
-      font-size: 12px;
+      //   right: 40px;
+      left: 40px;
+      font-size: 0.75rem;
       text-align: left;
       text-transform: uppercase;
       max-width: 90px;
