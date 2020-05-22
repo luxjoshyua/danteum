@@ -128,24 +128,30 @@
         &.img3 {
           background-image: url("../assets/gallery-two/gallery-two-jumper.jpg");
         }
+        &.img4 {
+          background-image: url("../assets/gallery-two/gallery-two-jacket.jpg");
+        }
+        &.img5 {
+          background-image: url("../assets/gallery-two/gallery-two-shorts.jpg");
+        }
       }
       .content-inner {
         padding: 22px;
         .heading {
           padding-bottom: 16px;
+          text-transform: capitalize;
+          font-weight: 400;
         }
         .copy {
           padding: 0;
           margin-bottom: 1rem;
           font-size: 0.875rem;
-          &:last-of-type {
-            // margin-bottom: 3rem;
-          }
         }
         .sizes {
           display: flex;
           align-items: center;
           margin-bottom: 2rem;
+          font-size: initial;
           span {
             border: 2px solid $white;
             padding: 0.4rem 0.6rem;
@@ -157,7 +163,7 @@
           }
         }
         .btn {
-          border-radius: 20px;
+          //   border-radius: 20px;
           border: 2px solid $white;
           padding: 0.6rem;
           &:hover {
