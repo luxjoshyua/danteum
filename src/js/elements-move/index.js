@@ -4,7 +4,6 @@ const heroSection = document.querySelector(".hero-first-section");
 const heroSectionHeight = heroSection.getBoundingClientRect().height;
 
 const widthText = heading.getBoundingClientRect().width;
-// console.log(widthText);
 
 // if we move 1px, will go left widthText / heroSectionHeight;
 const calculateMovement = widthText / heroSectionHeight;
