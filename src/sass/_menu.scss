@@ -10,11 +10,10 @@ nav {
         justify-content: space-between;
         padding: 22px;
         width: 100%;
-
         .left {
-            h3 {
-                font-size: 22px;
-                font-weight: 700;
+            .brand-text {
+                text-shadow: 10px 10px 0 rgb(255, 255, 255);
+                // filter: blur(2px);
             }
         }
 
@@ -26,14 +25,15 @@ nav {
                 line-height: 26px;
                 font-weight: 700;
                 text-transform: uppercase;
-                margin-right: 8px;
+                margin-right: 16px;
             }
         }
 
         .right {
             margin-right: 32px;
-            p {
-                font-size: 20px;
+            .brand-text {
+                text-shadow: 10px 10px 0 rgb(255, 255, 255);
+                // filter: blur(10px);
             }
         }
     }
