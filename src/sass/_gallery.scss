@@ -2,7 +2,6 @@
   0% {
     transform: translate(0, 0);
   }
-
   100% {
     transform: translate(-100%, 0);
   }
@@ -11,21 +10,21 @@
 // gallery
 .gallery {
   position: relative;
-  //   min-height: 120vh;
   .heading {
     position: absolute;
     left: 50%;
-    transform: translate(-50%) !important;
+    transform: rotate(-5deg);
     width: 100%;
-    top: 20%;
+    top: 30%;
     white-space: nowrap;
     z-index: 2;
     align-items: center;
     span {
-      font-size: 20vh;
+      font-size: 8rem;
       font-weight: 400;
       display: inline-block;
-      animation: marquee 125s linear infinite;
+      animation: marquee 15s linear infinite;
+      //   animation-delay: 4s;
     }
   }
 }
@@ -76,6 +75,13 @@
       opacity: 1;
     }
   }
+  .swiper-button-prev,
+  .swiper-button-next {
+    // color: $white;
+    &:hover {
+      color: $lime-green;
+    }
+  }
 }
 
 .gallery-two {
@@ -122,20 +128,44 @@
         &.img3 {
           background-image: url("../assets/gallery-two/gallery-two-jumper.jpg");
         }
+        &.img4 {
+          background-image: url("../assets/gallery-two/gallery-two-jacket.jpg");
+        }
+        &.img5 {
+          background-image: url("../assets/gallery-two/gallery-two-shorts.jpg");
+        }
       }
       .content-inner {
         padding: 22px;
         .heading {
           padding-bottom: 16px;
+          text-transform: capitalize;
+          font-weight: 400;
         }
         .copy {
           padding: 0;
-          margin-bottom: 64px;
+          margin-bottom: 1rem;
+          font-size: 0.875rem;
+        }
+        .sizes {
+          display: flex;
+          align-items: center;
+          margin-bottom: 2rem;
+          font-size: initial;
+          span {
+            border: 2px solid $white;
+            padding: 0.4rem 0.6rem;
+            margin-right: 0.6rem;
+            &:hover {
+              color: $lime-green;
+              border: 1px solid $lime-green;
+            }
+          }
         }
         .btn {
-          border-radius: 20px;
+          //   border-radius: 20px;
           border: 2px solid $white;
-          padding: 12px;
+          padding: 0.6rem;
           &:hover {
             color: $lime-green;
             border: 2px solid $lime-green;
@@ -156,7 +186,6 @@
       .swiper-button-prev,
       .swiper-button-next {
         color: $white;
-        // background-color: red;
         &:after {
           content: "";
         }

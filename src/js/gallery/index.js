@@ -4,14 +4,18 @@ new Swiper(".gallery .swiper-container", {
   slidesPerView: 2,
   initialSlide: 0,
   draggable: true,
-  breakpoints: {
-    600: {
-      slidesPerView: 2,
-    },
-    1000: {
-      slidesPerView: 3,
-    },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
+  //   breakpoints: {
+  //     600: {
+  //       slidesPerView: 2,
+  //     },
+  //     1000: {
+  //       slidesPerView: 3,
+  //     },
+  //   },
 });
 
 new Swiper(".gallery-two .swiper-container", {

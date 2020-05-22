@@ -7,6 +7,11 @@
     <title>Danteum - luxjoshyua</title>
     <meta name="description" content="A Danteum playground" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="1281" />
+    <meta property="og:image" content="./assets/danteum-social-share.jpg" />
+    <meta property="og:image:secure_url" content="./assets/danteum-social-share.jpg" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
@@ -15,21 +20,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
     <script type="text/javascript" src="https://www.cornify.com/js/cornify.js"></script>
     <script src="https://kit.fontawesome.com/eb605637ff.js" crossorigin="anonymous"></script>
+
 </head>
 
 <!-- TODO: 
     - Get this text ripple effect working on a section - https://omotesando.eu/
     - Add in a horizontal scroll page, pretend interview with Ivan and Elena - https://collection-wakawaka.world/interview
     - Get this effect working for the home page - http://yaleschoolofart.org/openstudios2019/
-    - Try and get this moveable text effect working on a child page https://www.nytimes.com/interactive/2020/02/27/opinion/2019-year-in-illustration.html
+    - Try and get this moveable text effect working on a child page - https://www.nytimes.com/interactive/2020/02/27/opinion/2019-year-in-illustration.html
+    - Like this super minimal grid text change layout - https://www.samyrio.fr/
 -->
 
 <body>
     <article>
         <div class="scrolling-area">
-            <!-- custom cursor -->
-            <canvas class="cursor cursor--canvas"></canvas>
-            <!-- <canvas id="shader"></canvas> -->
+            <div class="canvas-wrapper">
+                <canvas class="cursor cursor--canvas"></canvas>
+            </div>
             <!-- nav -->
             <nav>
                 <div class="inner">
@@ -43,7 +50,7 @@
                         <a href="interview.html">interview</a>
                         <a href="#">contact</a>
                     </div>
-                    <div class="right mouse-shadow-area">
+                    <div class="right">
                         <p class="brand-text">COLLECTION N°16</p>
                     </div>
                 </div>
@@ -51,15 +58,14 @@
             <!-- hero -->
             <section class="hero">
                 <div class="hero-first-section">
-                    <div class="heading">
-                        <h1 id="heading-move">
-                            DANTEUM
-                        </h1>
+                    <div class="heading-wrapper">
+                        <div class="heading">
+                            <h1 id="heading-move">
+                                DANTEUM
+                            </h1>
+                        </div>
                     </div>
-                    <!-- <div class="img-outer parallax-scroll">
-                        <img src="assets/hero/K1.jpg" loading="lazy" />
-                    </div> -->
-                    <div class="img-outer parallax-scroll plane">
+                    <div class="img-outer parallax-scroll">
                         <img src="assets/hero/K1.jpg" loading="lazy" />
                     </div>
                 </div>
@@ -96,11 +102,9 @@
 
             <!-- gallery -->
             <section class="gallery" id="lookbook">
-                <div class="heading parallax-scroll">
+                <div class="heading">
                     <span>
-                        DANTEUM N°16 - Spring Summer 2020 DANTEUM N°16 - Spring Summer
-                        2020 DANTEUM N°16 - Spring Summer 2020 DANTEUM N°16 - Spring
-                        Summer 2020 DANTEUM N°16 - Spring Summer 2020
+                        DANTEUM N°16 - Spring Summer 2020
                     </span>
                 </div>
                 <div class="swiper-container">
@@ -159,6 +163,17 @@
                             <img src="./assets/hero/gallery/prod8.jpg" alt="coat" loading="lazy" />
                             <div class="gallery-text">
                                 <p>park wool mint</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- arrows -->
+                    <div class="swiper-arrows-wrapper">
+                        <div class="swiper-arrows-inner">
+                            <div class="swiper-button-prev">
+                                <!-- <i class="fas fa-long-arrow-alt-left"></i> -->
+                            </div>
+                            <div class="swiper-button-next">
+                                <!-- <i class="fas fa-long-arrow-alt-right"></i> -->
                             </div>
                         </div>
                     </div>
@@ -591,15 +606,28 @@
                                 <div class="gallery-inner">
                                     <div class="content">
                                         <div class="content-inner">
-                                            <h1 class="heading">CLOTHING ONE</h1>
+                                            <h1 class="heading">Danteum x ArkAir</h1>
                                             <p class="copy">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                Vivamus porttitor erat turpis, sit amet tempus eros rutrum
-                                                convallis. Pellentesque eu ullamcorper sapien, sit amet
-                                                finibus lectus. Suspendisse vel dapibus dolor.
+                                                Time to launch our newest collaboration: Danteum meets ArkAir and its
+                                                unmistakable military aesthetic.
                                             </p>
+                                            <p class="copy">We’re proud to present the outcome of our joint venture with
+                                                the UK
+                                                clothing brand that's made a name for itself by designing and
+                                                engineering one of the best technical gears around the globe.</p>
+                                            <p class="copy">From a hat to a shirt, from a pair of shorts to a
+                                                parka—while applying
+                                                ArkAir's ripstop fabric, this collaboration introduces an ‘Illusion
+                                                Blue’ camo pattern exclusively developed for this special occasion.</p>
+                                            <p class="copy">Made in Portugal</p>
+                                            <div class="sizes">
+                                                <span>S</span>
+                                                <span>M</span>
+                                                <span>L</span>
+                                                <span>XL</span>
+                                            </div>
                                             <a href="#" class="btn">
-                                                <span>read more</span>
+                                                <span>&rarr; buy now</span>
                                             </a>
                                         </div>
                                     </div>
@@ -611,15 +639,26 @@
                                 <div class="gallery-inner">
                                     <div class="content">
                                         <div class="content-inner">
-                                            <h1 class="heading">CLOTHING TWO</h1>
+                                            <h1 class="heading">Illusion Page Wikipedia White</h1>
                                             <p class="copy">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                Vivamus porttitor erat turpis, sit amet tempus eros rutrum
-                                                convallis. Pellentesque eu ullamcorper sapien, sit amet
-                                                finibus lectus. Suspendisse vel dapibus dolor.
+                                                Danteum x Wikipedia
                                             </p>
+                                            <p class="copy">
+                                                Long sleeve white cotton shirt. Shell buttons and rounded buttoned
+                                                cuffs. Oversize boxy fit.
+                                            </p>
+                                            <p class="copy">
+                                                100% cotton
+                                            </p>
+                                            <p class="copy">Made in Portugal</p>
+                                            <div class="sizes">
+                                                <span>S</span>
+                                                <span>M</span>
+                                                <span>L</span>
+                                                <span>XL</span>
+                                            </div>
                                             <a href="#" class="btn">
-                                                <span>read more</span>
+                                                <span>&rarr; buy now</span>
                                             </a>
                                         </div>
                                     </div>
@@ -631,19 +670,91 @@
                                 <div class="gallery-inner">
                                     <div class="content">
                                         <div class="content-inner">
-                                            <h1 class="heading">CLOTHING THREE</h1>
+                                            <h1 class="heading">Racing Definition Wikipedia</h1>
                                             <p class="copy">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                Vivamus porttitor erat turpis, sit amet tempus eros rutrum
-                                                convallis. Pellentesque eu ullamcorper sapien, sit amet
-                                                finibus lectus. Suspendisse vel dapibus dolor.
+                                                Danteum x Wikipedia
                                             </p>
+                                            <p class="copy">
+                                                Long sleeve cotton hoodie in black.  Drawstring at hood, rib knit cuffs,
+                                                and hem. Kangaroo pocket at waist. Oversize fit.
+                                            </p>
+                                            <p class="copy">
+                                                100% cotton
+                                            </p>
+                                            <p class="copy">Made in Portugal</p>
+                                            <div class="sizes">
+                                                <span>S</span>
+                                                <span>M</span>
+                                                <span>L</span>
+                                                <span>XL</span>
+                                            </div>
                                             <a href="#" class="btn">
-                                                <span>read more</span>
+                                                <span>&rarr; buy now</span>
                                             </a>
                                         </div>
                                     </div>
                                     <div class="img-outer img3"></div>
+                                </div>
+                            </div>
+                            <!-- gallery item four -->
+                            <div class="gallery-item swiper-slide">
+                                <div class="gallery-inner">
+                                    <div class="content">
+                                        <div class="content-inner">
+                                            <h1 class="heading">Guest Denim Keith Haring White</h1>
+                                            <p class="copy">
+                                                Danteum x Keith Haring
+                                            </p>
+                                            <p class="copy">
+                                                Long sleeve denim jacket in white with spread collar and button closure
+                                                at front. Patch pockets at chest and welt pockets at waist.
+                                                Single-button barrel cuffs. Adjustable buttoned tabs at back hem. Keith
+                                                Haring artworks all over. Regular fit.
+                                            </p>
+                                            <p class="copy">
+                                                100% cotton
+                                            </p>
+                                            <p class="copy">Made in Portugal</p>
+                                            <div class="sizes">
+                                                <span>S</span>
+                                                <span>M</span>
+                                                <span>L</span>
+                                                <span>XL</span>
+                                            </div>
+                                            <a href="#" class="btn">
+                                                <span>buy now</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="img-outer img4"></div>
+                                </div>
+                            </div>
+                            <!-- gallery item five -->
+                            <div class="gallery-item swiper-slide">
+                                <div class="gallery-inner">
+                                    <div class="content">
+                                        <div class="content-inner">
+                                            <h1 class="heading">Racing Short Camo Orange</h1>
+                                            <p class="copy">
+                                                Knee-length cotton shorts in orange camo. Elasticized waistband.
+                                            </p>
+                                            <p class="copy">
+                                                100% cotton
+                                            </p>
+                                            <p class="copy">Made in Portugal</p>
+                                            <div class="sizes">
+                                                <span>S</span>
+                                                <span>M</span>
+                                                <span>L</span>
+                                                <span>XL</span>
+                                                <span>XXL</span>
+                                            </div>
+                                            <a href="#" class="btn">
+                                                <span>&rarr; buy now</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="img-outer img5"></div>
                                 </div>
                             </div>
                         </div>
