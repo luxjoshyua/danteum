@@ -49,7 +49,7 @@ new SmoothScrollingArticle({
   scrollable: document.querySelector(".scrolling-area"),
   items: items,
   fixedParents: [
-    document.querySelector(".heading"),
+    document.querySelector(".heading-wrapper"),
     document.querySelector(".canvas-wrapper"),
   ],
 });
