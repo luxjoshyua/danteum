@@ -136,13 +136,30 @@
         }
         .copy {
           padding: 0;
-          margin-bottom: 64px;
+          margin-bottom: 1rem;
           font-size: 0.875rem;
+          &:last-of-type {
+            // margin-bottom: 3rem;
+          }
+        }
+        .sizes {
+          display: flex;
+          align-items: center;
+          margin-bottom: 2rem;
+          span {
+            border: 2px solid $white;
+            padding: 0.4rem 0.6rem;
+            margin-right: 0.6rem;
+            &:hover {
+              color: $lime-green;
+              border: 1px solid $lime-green;
+            }
+          }
         }
         .btn {
           border-radius: 20px;
           border: 2px solid $white;
-          padding: 12px;
+          padding: 0.6rem;
           &:hover {
             color: $lime-green;
             border: 2px solid $lime-green;
