@@ -12,7 +12,6 @@ section {
     }
   }
 }
-
 .hero {
   mix-blend-mode: multiply;
   .hero-first-section {
@@ -24,6 +23,7 @@ section {
       text-align: center;
       width: auto;
       margin-top: 2rem;
+      //   z-index: 30;
       h1 {
         font-size: 30rem;
         font-weight: 700;

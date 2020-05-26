@@ -91,16 +91,17 @@
 
 .gallery-two {
   position: relative;
-  z-index: 20;
+  z-index: 10;
   .swiper-outer {
     max-width: 80%;
     margin: 0 auto;
   }
   .swiper-container {
     overflow: hidden;
-    margin-top: 0;
+    margin: 0;
+
     .swiper-wrapper {
-      padding-left: 32px;
+      //   padding-left: 32px;
       .swiper-slide {
         padding: 0;
         &:first-of-type {
@@ -114,16 +115,15 @@
     max-height: 640px;
     .gallery-inner {
       display: flex;
-      .content,
+      justify-content: space-between;
       .img-outer {
-        max-width: 50%;
-      }
-      .img-outer {
-        background-size: contain;
-        background-position: center center;
+        background-size: cover;
+        background-position: center 10%;
         width: 100%;
+        max-width: 50%;
         height: 100%;
-        padding-bottom: 50%;
+        background-repeat: no-repeat;
+        min-height: 600px;
         &.img1 {
           background-image: url("../assets/gallery-two/gallery-two-parka.jpg");
         }
