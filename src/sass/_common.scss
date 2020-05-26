@@ -1,14 +1,18 @@
 .inner {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 1400px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 46px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 46px;
 }
 
 .padding {
-    padding: 200px 0;
+  padding: 200px 0;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px $lime-green;
 }

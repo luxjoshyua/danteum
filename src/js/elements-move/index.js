@@ -1,4 +1,4 @@
-var _ = require('lodash');
+var _ = require("lodash");
 const heading = document.getElementById("heading-move");
 
 const heroSection = document.querySelector(".hero-first-section");
@@ -11,17 +11,20 @@ const headingWidth = heading.clientWidth;
 const calculateMovement = widthText / heroSectionHeight;
 // console.log(calculateMovement);
 
-function headingMove(){
-  const scrollTop = Math.round( window.scrollY );
+function headingMove() {
+  const scrollTop = Math.round(window.scrollY);
   // for every 1px scrolled, we need to use var calculateMovement
-  const mathMovement = Math.round( calculateMovement * scrollTop * -1 );
-  if( mathMovement >= ( headingWidth  * -1) ){
+  const mathMovement = Math.round(calculateMovement * scrollTop * -1);
+  if (mathMovement >= headingWidth * -1) {
     heading.style.transform = `translateX(${mathMovement}px)`;
   }
-};
+}
 
 // update position of heading when scroll event fires
 window.addEventListener("scroll", function () {
   headingMove();
 });
-// window.addEventListener("scroll", _.throttle( headingMove, 10, { leading: true, trailing: true} ));
+window.addEventListener(
+  "scroll",
+  _.throttle(headingMove, 10, { leading: true, trailing: true })
+);
