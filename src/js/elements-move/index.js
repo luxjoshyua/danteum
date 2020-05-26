@@ -1,3 +1,4 @@
+var _ = require('lodash');
 const heading = document.getElementById("heading-move");
 
 const heroSection = document.querySelector(".hero-first-section");
@@ -21,3 +22,4 @@ const headingMove = () => {
 window.addEventListener("scroll", function () {
   headingMove();
 });
+// window.addEventListener("scroll", _.throttle( headingMove, 10, { leading: true, trailing: true} ));

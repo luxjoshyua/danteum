@@ -41,6 +41,7 @@
   ],
   "dependencies": {
     "future-scroll": "^1.1.5",
+    "lodash": "^4.17.15",
     "swiper": "^5.3.6"
   }
 }
