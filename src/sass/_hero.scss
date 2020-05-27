@@ -23,7 +23,7 @@ section {
       text-align: center;
       width: auto;
       margin-top: 2rem;
-      opacity: 1 !important;
+
       //   z-index: 30;
       h1 {
         font-size: 30rem;
@@ -34,6 +34,7 @@ section {
         // color: darkturquoise;
         -webkit-text-stroke: 2px $lime-green;
         color: transparent;
+        opacity: 1 !important;
       }
     }
   }

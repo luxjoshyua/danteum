@@ -8,12 +8,13 @@ import "./js/gallery";
 import "./js/konami";
 import "./js/nav";
 import "./js/mouse-move-shadow";
+import "./js/blotter";
 
 // Add in wacky console message
-console.log(
-  "%c This is an experimentation site of Joshua Fielding, a frontend developer, reach out at josh.e.fielding@gmail.com",
-  "font-size: 50px;background:#00ff00;text-shadow:10px 10px 0 blue"
-);
+// console.log(
+//   "%c This is an experimentation site of Joshua Fielding, a frontend developer, reach out at josh.e.fielding@gmail.com",
+//   "font-size: 50px;background:#00ff00;text-shadow:10px 10px 0 blue"
+// );
 
 // Future Scroll
 const map = (x, a, b, c, d) => ((x - a) * (d - c)) / (b - a) + c;
