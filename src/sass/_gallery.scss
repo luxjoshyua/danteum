@@ -103,7 +103,7 @@
   .swiper-outer {
     max-width: 80%;
     margin: 0 auto;
-    @included md {
+    @include md {
       max-width: 100%;
     }
   }
