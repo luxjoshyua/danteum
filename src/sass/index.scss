@@ -7,6 +7,7 @@
 @import "gallery";
 @import "interview";
 @import "canvas";
+@import "three";
 
 body {
   // font-family: Helvetica Neue;
@@ -60,4 +61,10 @@ p {
 .parallax-scroll {
   opacity: 0;
   //   opacity: 1;
+}
+
+.img1-pos {
+  position: absolute;
+  top: 10em;
+  left: 5em;
 }

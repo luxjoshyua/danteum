@@ -40,8 +40,12 @@
     "last 2 versions"
   ],
   "dependencies": {
+    "@johh/three-effectcomposer": "0.0.7",
+    "curtainsjs": "^6.1.1",
     "future-scroll": "^1.1.5",
     "lodash": "^4.17.15",
-    "swiper": "^5.3.6"
+    "swiper": "^5.3.6",
+    "three": "^0.116.1",
+    "three-effectcomposer": "0.0.1"
   }
 }

@@ -8,7 +8,7 @@ import "./js/gallery";
 import "./js/konami";
 import "./js/nav";
 import "./js/mouse-move-shadow";
-// import "./js/blotter";
+import "./js/three";
 
 // Add in wacky console message
 // console.log(
