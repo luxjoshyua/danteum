@@ -32,8 +32,14 @@
 .swiper-container {
   cursor: grab;
   margin-left: 3rem;
+  @include md {
+    margin-left: 0;
+  }
   .swiper-wrapper {
     max-height: 80vh;
+    @include md {
+      margin-left: 2rem;
+    }
   }
   .swiper-slide {
     display: flex;
@@ -49,9 +55,10 @@
       }
     }
     @include md {
-      &:first-of-type {
-        display: none;
-      }
+      //   &:first-of-type {
+      //     display: none;
+      //   }
+      padding-right: 2rem;
     }
     @include sm {
       &:last-of-type {
@@ -96,6 +103,9 @@
   .swiper-outer {
     max-width: 80%;
     margin: 0 auto;
+    @included md {
+      max-width: 100%;
+    }
   }
   .swiper-container {
     overflow: hidden;
@@ -117,6 +127,11 @@
     .gallery-inner {
       display: flex;
       justify-content: space-between;
+      .content {
+        @include md {
+          max-width: 50%;
+        }
+      }
       .img-outer {
         background-size: cover;
         background-position: center 10%;

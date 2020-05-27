@@ -8,14 +8,14 @@ new Swiper(".gallery .swiper-container", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  //   breakpoints: {
-  //     600: {
-  //       slidesPerView: 2,
-  //     },
-  //     1000: {
-  //       slidesPerView: 3,
-  //     },
-  //   },
+  breakpoints: {
+    600: {
+      slidesPerView: 2,
+    },
+    // 1000: {
+    //   slidesPerView: 2,
+    // },
+  },
 });
 
 new Swiper(".gallery-two .swiper-container", {

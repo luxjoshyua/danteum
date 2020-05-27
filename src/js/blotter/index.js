@@ -1,7 +1,7 @@
 import "./blotter-min";
 import "./channelSplitMaterial";
 
-console.log("here!");
+// console.log("here!");
 
 var text = new Blotter.Text("Hello", {
   family: "serif",

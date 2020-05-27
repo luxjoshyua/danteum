@@ -5,6 +5,9 @@ section {
 .chapter {
   .copy {
     padding: 0 4em;
+    @include md {
+      padding: 0 2em;
+    }
     h3 {
       font-size: 4rem;
       font-weight: 400;
@@ -197,14 +200,20 @@ section {
   }
   .copy {
     padding: 2em 4em;
+    @include md {
+      padding: 2em;
+    }
   }
   .collage-wrapper {
     position: relative;
     z-index: 5;
-    background-color: white;
+    background-color: $white;
     margin: 0 4em;
     height: 120vh;
     cursor: url("../assets/cursor-blue.svg"), auto;
+    @include md {
+      margin: 0 2em;
+    }
   }
   .collage-draw {
     vertical-align: bottom;
