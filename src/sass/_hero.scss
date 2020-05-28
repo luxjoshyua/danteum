@@ -36,6 +36,9 @@ section {
         -webkit-text-stroke: 2px $lime-green;
         color: transparent;
         opacity: 1 !important;
+        @media screen and (max-width: 1280px) {
+          font-size: 17rem;
+        }
       }
     }
   }
