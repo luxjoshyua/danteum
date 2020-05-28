@@ -37,7 +37,7 @@ function init() {
   camera.position.z = 0.5;
 
   scene = new THREE.Scene();
-  //   sets the background colour
+  //   sets the background colour to transparent according to https://stackoverflow.com/questions/16177056/changing-three-js-background-to-transparent-or-other-color
   //   scene.background = new THREE.Color(0xff0000, 0);
 
   //   geometry = new THREE.PlaneGeometry(0.45, 0.3);
@@ -93,6 +93,7 @@ function init() {
             float r = texture2D(tDiffuse, newUV.xy += c * (0.1 * .5)).x;
             float g = texture2D(tDiffuse, newUV.xy += c * (0.1 * .525)).y;
             float b = texture2D(tDiffuse, newUV.xy += c * (0.1 * .55)).z;
+            // this line affects the background colour
             vec4 color = vec4(r, g, b, 1.);
 
             gl_FragColor = color;
