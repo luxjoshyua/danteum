@@ -34,5 +34,5 @@ function headingMove() {
 window.addEventListener(
   "scroll",
   //   every 10 miliseconds, position is updated on scroll
-  _.throttle(headingMove, 5, { leading: true, trailing: true })
+  _.throttle(headingMove, 1, { leading: true, trailing: true })
 );

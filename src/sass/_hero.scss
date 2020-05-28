@@ -18,7 +18,7 @@ section {
 .hero {
   mix-blend-mode: multiply;
   .hero-first-section {
-    padding-top: 740px;
+    padding-top: 460px;
     .heading {
       position: fixed;
       top: 0;
@@ -26,7 +26,6 @@ section {
       text-align: center;
       width: auto;
       margin-top: 2rem;
-      //   z-index: 30;
       h1 {
         font-size: 25rem;
         font-weight: 700;
@@ -41,14 +40,13 @@ section {
     }
   }
   .img-outer {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: 10em;
     mix-blend-mode: difference;
     img {
       width: 60vw;
       height: 100%;
+    }
+    .img-texture {
+      position: relative;
     }
   }
   .img2 {

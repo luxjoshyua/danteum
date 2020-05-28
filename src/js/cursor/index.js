@@ -33,7 +33,7 @@ if (canvas !== null) {
     context.lineTo(x, y);
 
     // gradient fill effect
-    let widthOfRect = window.innerWidth * 0.25;
+    let widthOfRect = window.innerWidth * 0.2;
     let halfOfRect = widthOfRect / 2;
     let grd = context.createRadialGradient(x, y, 0, x, y, halfOfRect);
     grd.addColorStop(0, "rgba(" + color2 + ",1)");
