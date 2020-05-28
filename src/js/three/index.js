@@ -10,6 +10,7 @@ var geometry,
   mesh,
   texture,
   uMouse = new THREE.Vector2(0, 0);
+
 var img = document.getElementById("texture");
 
 let dummyimg = document.createElement("img");
@@ -36,6 +37,7 @@ function init() {
   camera.position.z = 0.5;
 
   scene = new THREE.Scene();
+  //   sets the background colour
   //   scene.background = new THREE.Color(0xff0000, 0);
 
   //   geometry = new THREE.PlaneGeometry(0.45, 0.3);
@@ -52,8 +54,8 @@ function init() {
 
   renderer.domElement.classList.add("img-texture");
 
-  //   set the canvas to clear background
-  renderer.setClearColor(0xffffff, 0);
+  //   set the canvas to clear background!!!
+  //   renderer.setClearColor(0xffffff, 0);
 
   let newDOM = document.querySelector(".hero .img-outer");
   newDOM.appendChild(renderer.domElement);
