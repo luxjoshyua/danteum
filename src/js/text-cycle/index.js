@@ -1,5 +1,6 @@
 // select the characters you want to change
 const text2Cycle = [...document.querySelectorAll(".text-cycle")];
+const text2CycleSecond = [...document.querySelectorAll(".text-cycle-second")];
 const characters = [
   "A",
   "a",
@@ -58,3 +59,13 @@ setInterval(() => {
     element.innerHTML = randomCharacter;
   });
 }, 500);
+
+setTimeout(() => {
+  setInterval(() => {
+    const randomCharacter =
+      characters[Math.floor(Math.random() * characters.length)];
+    text2CycleSecond.forEach((element) => {
+      element.innerHTML = randomCharacter;
+    });
+  }, 500);
+}, 3000);
