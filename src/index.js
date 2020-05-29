@@ -9,6 +9,7 @@ import "./js/konami";
 import "./js/nav";
 import "./js/mouse-move-shadow";
 import "./js/three";
+import "./js/text-cycle";
 
 // Add in wacky console message
 // console.log(
