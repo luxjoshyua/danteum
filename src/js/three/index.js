@@ -49,13 +49,11 @@ function init() {
   scene.add(mesh);
 
   renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+  renderer.setClearColor(0xffffff, 0);
   renderer.setSize(window.innerWidth, window.innerHeight);
   renderer.outputEncoding = THREE.sRGBEncoding;
 
   renderer.domElement.classList.add("img-texture");
-
-  //   set the canvas to clear background!!!
-  //   renderer.setClearColor(0xffffff, 0);
 
   let newDOM = document.querySelector(".hero .img-outer");
   newDOM.appendChild(renderer.domElement);
