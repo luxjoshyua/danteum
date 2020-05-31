@@ -10,29 +10,28 @@
 @import "three";
 
 body {
-  // font-family: Helvetica Neue;
-  font-family: "Sil";
-  font-weight: 400;
-  font-size: 1.25rem;
-  //   background-color: $black;
-  background-color: #000000;
-  color: whitesmoke;
-  overflow-x: hidden;
-  cursor: default;
+    font-family: "Sil";
+    font-weight: 400;
+    font-size: 1.25rem;
+    //   background-color: $black;
+    background-color: #000000;
+    color: whitesmoke;
+    overflow-x: hidden;
+    cursor: default;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
-  &:hover {
-    cursor: pointer;
-    transform: scaleX(-1);
-    transition: all 0.3s ease-in-out;
-    color: $lime-green;
-  }
-  &:visited {
-    font-style: italic;
-  }
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+        cursor: pointer;
+        transform: scaleX(-1);
+        transition: all 0.3s ease-in-out;
+        color: $lime-green;
+    }
+    &:visited {
+        font-style: italic;
+    }
 }
 
 h1,
@@ -42,30 +41,29 @@ h4,
 h5,
 h6,
 p {
-  margin: 0;
+    margin: 0;
 }
 
 ::-webkit-scrollbar {
-  width: 15px;
+    width: 15px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: $white;
-  cursor: pointer;
-  transition: all 1s ease;
+    background: $white;
+    cursor: pointer;
+    transition: all 1s ease;
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent;
+    background: transparent;
 }
 
 .parallax-scroll {
-  opacity: 0;
-  //   opacity: 1;
+    opacity: 0;
 }
 
-.img1-pos {
-  position: absolute;
-  top: 10em;
-  left: 5em;
-}
+// .img1-pos {
+//     position: absolute;
+//     top: 10em;
+//     left: 5em;
+// }
