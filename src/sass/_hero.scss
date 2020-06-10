@@ -237,4 +237,18 @@ section {
 }
 
 .contact {
+  .copy {
+    position: relative;
+    z-index: 2;
+  }
+  .gif-outer {
+    max-width: 520px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    img {
+      max-width: 100%;
+    }
+  }
 }
