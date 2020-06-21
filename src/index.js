@@ -11,6 +11,9 @@ import "./js/mouse-move-shadow";
 import "./js/three";
 import "./js/text-cycle";
 
+import vid1 from "./assets/gold-lamb.mp4";
+console.log(vid1);
+
 // Add in wacky console message
 console.log(
   "%c This is an experimentation site of Joshua Fielding, a frontend developer, reach out at josh.e.fielding@gmail.com",

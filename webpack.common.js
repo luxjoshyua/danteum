@@ -36,6 +36,17 @@ module.exports = {
         ],
       },
       {
+        test: /\.(mov|mp4)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+            },
+          },
+        ],
+      },
+      {
         test: /\.js$/,
         loader: "babel-loader",
         exclude: /node_modules/,
