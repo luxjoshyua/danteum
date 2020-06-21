@@ -11,8 +11,8 @@ import "./js/mouse-move-shadow";
 import "./js/three";
 import "./js/text-cycle";
 
-import vid1 from "./assets/gold-lamb.mp4";
-console.log(vid1);
+import video from "./assets/gold-lamb.mp4";
+// console.log(video);
 
 // Add in wacky console message
 console.log(
