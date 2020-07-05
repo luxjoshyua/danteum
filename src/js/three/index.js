@@ -27,7 +27,7 @@ dummyimg.onload = function () {
 dummyimg.src = img.src;
 
 function init() {
-  console.log(texture);
+  //   console.log(texture);
   camera = new THREE.PerspectiveCamera(
     70,
     window.innerWidth / window.innerHeight,
