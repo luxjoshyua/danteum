@@ -1,220 +1,222 @@
 @keyframes marquee {
-    0% {
-        transform: translate(0, 0);
-    }
-    100% {
-        transform: translate(-100%, 0);
-    }
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
 }
 
 // gallery
 .gallery {
-    position: relative;
-    .heading {
-        position: absolute;
-        left: 0%;
-        transform: rotate(-5deg);
-        width: 100%;
-        top: 30%;
-        white-space: nowrap;
-        z-index: 2;
-        pointer-events: none;
-        span {
-            font-size: 8rem;
-            font-weight: 400;
-            display: inline-block;
-            animation: marquee 15s linear infinite;
-        }
-        pointer-events: none;
+  position: relative;
+  .heading {
+    position: absolute;
+    left: 0%;
+    transform: rotate(-5deg);
+    width: 100%;
+    top: 30%;
+    white-space: nowrap;
+    z-index: 2;
+    pointer-events: none;
+    span {
+      font-size: 8rem;
+      font-weight: 400;
+      display: inline-block;
+      animation: marquee 15s linear infinite;
     }
+    pointer-events: none;
+  }
 }
 
 .swiper-container {
-    cursor: grab;
-    margin-left: 3rem;
+  cursor: grab;
+  margin-left: 3rem;
+  @include md {
+    margin-left: 0;
+  }
+  .swiper-wrapper {
+    max-height: 80vh;
     @include md {
-        margin-left: 0;
+      margin-left: 2rem;
     }
-    .swiper-wrapper {
-        max-height: 80vh;
-        @include md {
-            margin-left: 2rem;
-        }
+  }
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    max-height: 80vh;
+    &:nth-child(odd) {
+      flex-direction: column-reverse;
     }
-    .swiper-slide {
-        display: flex;
-        flex-direction: column;
-        max-height: 80vh;
-        &:nth-child(odd) {
-            flex-direction: column-reverse;
-        }
-        &:nth-child(even) {
-            .gallery-text {
-                right: initial;
-                left: 40px;
-            }
-        }
-        @include md {
-            padding-right: 2rem;
-        }
-        @include sm {
-            &:last-of-type {
-                display: none;
-            }
-        }
-        img {
-            width: 100%;
-            object-fit: contain;
-            object-position: left;
-            max-height: 80vh;
-        }
-        .gallery-text {
-            position: absolute;
-            top: 100px;
-            left: 40px;
-            font-size: 0.75rem;
-            text-align: left;
-            text-transform: uppercase;
-            max-width: 90px;
-            color: #0a0a0a;
-        }
-        &.caption-visible .gallery-text {
-            opacity: 1;
-        }
+    &:nth-child(even) {
+      .gallery-text {
+        right: initial;
+        left: 40px;
+      }
     }
-    .swiper-button-prev,
-    .swiper-button-next {
-        min-width: 60px;
-        min-height: 60px;
-        color: $white;
-        &:hover {
-            color: $lime-green;
-        }
+    @include md {
+      padding-right: 2rem;
     }
+    @include sm {
+      &:last-of-type {
+        display: none;
+      }
+    }
+    img {
+      width: 100%;
+      object-fit: contain;
+      object-position: left;
+      max-height: 80vh;
+    }
+    .gallery-text {
+      position: absolute;
+      top: 100px;
+      left: 40px;
+      font-size: 0.75rem;
+      text-align: left;
+      text-transform: uppercase;
+      max-width: 90px;
+      color: #0a0a0a;
+    }
+    &.caption-visible .gallery-text {
+      opacity: 1;
+    }
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    min-width: 60px;
+    min-height: 60px;
+    color: $white;
+    &:hover {
+      color: $lime-green;
+    }
+  }
 }
 
 .gallery-two {
-    position: relative;
-    z-index: 10;
-    .swiper-outer {
-        max-width: 80%;
-        margin: 0 auto;
-        @include md {
-            max-width: 100%;
-        }
+  position: relative;
+  z-index: 10;
+  .swiper-outer {
+    max-width: 80%;
+    margin: 0 auto;
+    @include md {
+      max-width: 100%;
     }
-    .swiper-container {
-        overflow: hidden;
-        margin: 0;
-        .swiper-wrapper {
-            .swiper-slide {
-                padding: 0;
-                &:first-of-type {
-                    display: block;
-                }
-            }
+  }
+  .swiper-container {
+    overflow: hidden;
+    margin: 0;
+    .swiper-wrapper {
+      .swiper-slide {
+        padding: 0;
+        &:first-of-type {
+          display: block;
         }
+      }
     }
-    .gallery-item {
-        border: 2px solid $white;
-        max-height: 640px;
-        .gallery-inner {
-            display: flex;
-            justify-content: space-between;
-            .content {
-                background-color: $black;
-                @include md {
-                    max-width: 50%;
-                }
-            }
-            .img-outer {
-                background-size: cover;
-                background-position: center 10%;
-                width: 100%;
-                max-width: 50%;
-                height: 100%;
-                background-repeat: no-repeat;
-                min-height: 540px;
+  }
+  .gallery-item {
+    border: 2px solid $white;
+    max-height: 640px;
+    .gallery-inner {
+      display: flex;
+      justify-content: space-between;
+      .content {
+        background-color: $black;
+        width: 50%;
 
-                &.img1 {
-                    background-image: url("../assets/gallery-two/gallery-two-parka.jpg");
-                }
-                &.img2 {
-                    background-image: url("../assets/gallery-two/gallery-two-shirt.jpg");
-                }
-                &.img3 {
-                    background-image: url("../assets/gallery-two/gallery-two-jumper.jpg");
-                }
-                &.img4 {
-                    background-image: url("../assets/gallery-two/gallery-two-jacket.jpg");
-                }
-                &.img5 {
-                    background-image: url("../assets/gallery-two/gallery-two-shorts.jpg");
-                }
-            }
-            .content-inner {
-                padding: 22px;
-                .heading {
-                    padding-bottom: 16px;
-                    text-transform: capitalize;
-                    font-weight: 400;
-                }
-                .copy {
-                    padding: 0;
-                    margin-bottom: 1rem;
-                    font-size: 0.875rem;
-                }
-                .sizes {
-                    display: flex;
-                    align-items: center;
-                    margin-bottom: 2rem;
-                    font-size: initial;
-                    span {
-                        border: 2px solid $white;
-                        padding: 0.4rem 0.6rem;
-                        margin-right: 0.6rem;
-                        &:hover {
-                            color: $lime-green;
-                            border: 1px solid $lime-green;
-                        }
-                    }
-                }
-                .btn {
-                    border: 2px solid $white;
-                    padding: 0.6rem;
-                    &:hover {
-                        color: $lime-green;
-                        border: 2px solid $lime-green;
-                    }
-                }
-            }
+        @include md {
+          max-width: 50%;
         }
-    }
-    .swiper-arrows-wrapper {
-        position: absolute;
-        top: 90%;
-        min-height: 60px;
+      }
+      .img-outer {
+        background-size: cover;
+        background-position: center 10%;
         width: 100%;
-        .swiper-arrows-inner {
-            position: absolute;
-            width: 100%;
-            min-height: 60px;
-            .swiper-button-prev,
-            .swiper-button-next {
-                color: $white;
-                &:after {
-                    content: "";
-                }
-                &:hover {
-                    color: $lime-green;
-                }
-            }
-            .swiper-button-prev {
-                left: 20%;
-            }
-            .swiper-button-next {
-                right: 20%;
-            }
+        max-width: 50%;
+        height: 100%;
+        background-repeat: no-repeat;
+        min-height: 540px;
+
+        &.img1 {
+          background-image: url("../assets/gallery-two/gallery-two-parka.jpg");
         }
+        &.img2 {
+          background-image: url("../assets/gallery-two/gallery-two-shirt.jpg");
+        }
+        &.img3 {
+          background-image: url("../assets/gallery-two/gallery-two-jumper.jpg");
+        }
+        &.img4 {
+          background-image: url("../assets/gallery-two/gallery-two-jacket.jpg");
+        }
+        &.img5 {
+          background-image: url("../assets/gallery-two/gallery-two-shorts.jpg");
+        }
+      }
+      .content-inner {
+        padding: 22px;
+        .heading {
+          padding-bottom: 16px;
+          text-transform: capitalize;
+          font-weight: 400;
+        }
+        .copy {
+          padding: 0;
+          margin-bottom: 1rem;
+          font-size: 0.875rem;
+        }
+        .sizes {
+          display: flex;
+          align-items: center;
+          margin-bottom: 2rem;
+          font-size: initial;
+          span {
+            border: 2px solid $white;
+            padding: 0.4rem 0.6rem;
+            margin-right: 0.6rem;
+            &:hover {
+              color: $lime-green;
+              border: 1px solid $lime-green;
+            }
+          }
+        }
+        .btn {
+          border: 2px solid $white;
+          padding: 0.6rem;
+          &:hover {
+            color: $lime-green;
+            border: 2px solid $lime-green;
+          }
+        }
+      }
     }
+  }
+  .swiper-arrows-wrapper {
+    position: absolute;
+    top: 90%;
+    min-height: 60px;
+    width: 100%;
+    .swiper-arrows-inner {
+      position: absolute;
+      width: 100%;
+      min-height: 60px;
+      .swiper-button-prev,
+      .swiper-button-next {
+        color: $white;
+        &:after {
+          content: "";
+        }
+        &:hover {
+          color: $lime-green;
+        }
+      }
+      .swiper-button-prev {
+        left: 20%;
+      }
+      .swiper-button-next {
+        right: 20%;
+      }
+    }
+  }
 }
