@@ -1,3 +1,5 @@
+import Swiper from "swiper";
+
 new Swiper(".gallery .swiper-container", {
   speed: 300,
   //   spaceBetween: 160,
